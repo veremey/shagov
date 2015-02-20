@@ -1,0 +1,93 @@
+// ---------------- main styles ------------ //
+
+$gray: #5a5a5b
+$light: #ededed
+$black: #1a1a1b
+$blue: #08c
+$yellow: #fd0
+body
+	font: normal 13px/1.15 Arial, sans-serif
+	color: $black
+	background: $blue
+a
+	color: $blue 
+	&:hover
+		text-decoration: none
+
+.l-layout	 
+	margin: 0 auto -250px // марджин від'ємний такої ж велечини як висота футера
+	position: relative
+	min-height: 100%
+	height: auto !important
+	height: 100% 
+.push
+	clear: both
+	height: 250px // прижимає футер до низу вікна браузера,якщо контента мало 
+	// висота так ж як висота футера
+.wrapper
+	overflow: hidden
+.wrap
+	+clr
+.l-container
+	width: 1280px
+	margin: 0 auto 
+
+// ---------------- END main styles ------------ //
+
+// ---------------- Header styles ------------ //
+
+.header
+	padding-bottom: 20px
+	background: $black 
+.header__top
+	margin-bottom: 20px
+	+clr // аналог <div class="clear"></div> після елементів з флоатами
+
+.logo
+	float: left
+	+s(logo) // достаємо картинку зі спрайта
+
+.soc
+	float: right
+	margin-top: 20px
+	a
+		display: inline-block
+		vertical-align: middle
+.soc__vk
+	+s(soc-vk)
+.soc__fb
+	+s(soc-fb)
+.soc__tw
+	+s(soc-tw)
+.soc__gp
+	+s(soc-gp)
+.soc__od
+	+s(soc-od)
+ 
+.nav
+	overflow: hidden
+	+border-radius(10px)
+.nav__item
+	float: left
+	width: 20%
+.nav__link
+	display: block
+	height: 40px
+	line-height: 40px
+	text-decoration: none
+	text-align: center
+	color: $light 
+	background: $blue 
+	&:hover
+		background: $gray
+		+box-shadow(inset 0 0 7px rgba(0,0,0,.5)) 
+// ---------------- END Header styles ------------ //
+
+// ---------------- Footer styles ------------ //
+
+.footer
+	position: relative
+	height: 250px
+	+g($blue 20%, $yellow 80%) 
+	
+// ---------------- END Footer styles ------------ //  
