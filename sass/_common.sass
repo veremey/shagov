@@ -56,12 +56,17 @@ $gold: #95760e
 
 a
 	text-decoration: none
-
+.clear
+	clear: both
+	height: 0
 html
 	font-size: 62.5%
 body
 	font: 1.6rem/1.25 'Open Sans', Arial, sans-serif
-
+.l_container
+	position: relative
+	margin: 0 auto
+	width: 95%
 /* HEADER */
 
 .header
@@ -105,16 +110,18 @@ body
 	content: ""
 	+vcenter
 	+s(tw)
-.main__logo
+.main__logo a
 	+s(logo)
 	+vcenter
 	+hide-text
 .header__right
 	float: right
-	width: 185px
+	width: 175px
+	margin: 20px 20px 0 0
 	+clr
 .header__right-tel
 	position: relative
+	float: right
 	&:before
 		content: ""
 		position: absolute
@@ -123,27 +130,75 @@ body
 		+s(phone_ico_grey)
 .header__right-tel_link
 	position: relative
-	display: block
+	display: inline-block
 	text-align: right
-	+fs(16)
 	line-height: 25px
 	color: #222
+	+clr
 .header__right-return
 	position: relative
-	float: right
 	+os_light
 	+fs(13)
 	color: $gold
 	&:hover
 		color: #222
-	&:before
-		content: ""
-		position: absolute
-		top: 0
-		left: -30px
-		+s(phone_ico_gold)
+		border-bottom: 1px solid #222
+	// &:before
+	// 	content: ""
+	// 	position: absolute
+	// 	top: 0
+	// 	left: -30px
+	// 	+s(phone_ico_gold)
+
+/*----- FOOTER------- */
+
+.footer
+	border-top: 1px solid #CECECE
+	+clr
+	&__menu
+		margin: 0 auto
+		height: 60px
+		border-bottom: 1px solid $gold
+		+clr
+		&_item
+			display: inline-block
+			margin-right: 70px
+			line-height: 60px
+			&:last-child
+				margin-right: 0
+		&_link
+			display: inline
+			+fs(14)
+			color: #999
+			&:hover
+				color: #222
+				border-bottom: 1px solid #222
+	&__soc
+		+vcenter
+	&__right
+		float: right
+		color: #333
+		width: 350px    ////////  kjshkdjkjkjkjaksjd
 
 
+.footer .out
+	text-align: center
+.copy
+	float: left
+	width: 350px  //kjhjhasjddsadadsd
+	color: #6F6F6F
+	margin-top: 20px
+	+fs(12)
+	+clr
+
+.f__logo
+	position: relative
+	width: 100%
+	height: 120px
+	a
+		+s(f_logo)
+		+vcenter
+		+hide-text
 
 
 
