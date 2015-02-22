@@ -1,17 +1,13 @@
-// responsive example, edit or remove
-$breaksmall: 500px
 
-$breaklarge: 1180px
+// width
+=r($width)
+	@media only screen and (max-width: $width+ "px")
+		@content
 
-=r($media)
-	@if $media == pda
-		// narrower than $width
-		@media only screen and (max-width: $breaksmall)
-			@content
-	@else if $media == wide
-		// wider than $width
-		@media only screen and (min-width: $breaklarge)
-			@content
+// height
+=rh($height)
+	@media only screen and (max-height: $height + "px")
+		@content
 
 =fs($sizeValue: 16)
 	font-size: $sizeValue + px
@@ -27,19 +23,47 @@ $breaklarge: 1180px
 	*display: inline
 	*zoom: 1
 
+%pseudo
+	position: relative
+	&:before,&:after
+		content: ' '
+		position: absolute
+		top: 0
+		left: 0
+=pseudo
+	@extend %pseudo
+
+=coverdiv
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%    
+	
 =cover
 	background-repeat: no-repeat
 	background-size: cover
 	background-position: 50% 50%
-
-// retina bg
+	
+// =background-size($width: 100%, $height: 100%)
+// 	-moz-background-size: $width $height
+// 	-webkit-background-size: $width $height
+// 	background-size: $width $height 
+	
+// retina, also available as +hdpi
 =retina
 	@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)
 		@content
 
 =box
 	+box-sizing(border-box)
-
+// vertical-align at center
+=vcenter
+	position: absolute
+	top: 50%
+	left: 50%
+	+translate(-50%,-50%)  
+	
 //simple gradient
 =g($color1, $color2)
 	+background-image(linear-gradient($color1, $color2))
@@ -52,10 +76,10 @@ $breaklarge: 1180px
 	@font-face
 		font-family: $alias
 		src: url("fonts/" + $name + ".eot")
-		src: url("fonts/" + $name + ".eot?#iefix") format("embedded-opentype"), url("fonts/" + $name + ".woff") format("woff"), url("fonts/" + $name + ".ttf") format("truetype")
+		src: url("fonts/" + $name + ".eot?#iefix") format("embedded-opentype"), url("fonts/" + $name + ".woff2") format("woff2"), url("fonts/" + $name + ".woff") format("woff"), url("fonts/" + $name + ".ttf") format("truetype")
 		font-weight: normal
 		font-style: normal
-
+// usage: 
 //+font(black, cytiapro-black-webfont)
 
 // ROTATE
@@ -86,6 +110,30 @@ $breaklarge: 1180px
 
 =hidetext
 	+hide-text
+
+=justify
+	text-align: justify
+	line-height: 0
+	font-size: 0
+	text-justify: newspaper
+	zoom: 1
+	text-align-last: justify
+	&:after
+		content: ""
+		display: inline-block
+		width: 100%
+		height: 0px
+		visibility: hidden
+		overflow: hidden
+=vertical
+	text-align: center
+	font-size: 0
+	&:before
+		content: ""
+		display: inline-block
+		vertical-align: middle
+		width: 0
+		height: 100% 
 
 =clr
 	&:after
@@ -166,7 +214,6 @@ $breaklarge: 1180px
 		@content
 	& ::-moz-selection
 		@content
-
 =sel
 	+selection
 
@@ -180,35 +227,19 @@ $breaklarge: 1180px
 	transform: rotate(0.05deg)
 
 =scrollbar
-	& ::-moz-scrollbar
-		@content
-	& ::-webkit-scrollbar
-		@content
-	& ::scrollbar
+	&::-webkit-scrollbar
 		@content
 
 =scrollbar-track
-	& ::-moz-scrollbar-track
-		@content
-	& ::-webkit-scrollbar-track
-		@content
-	& ::scrollbar-track
+	&::-webkit-scrollbar-track
 		@content
 
 =scrollbar-thumb
-	& ::-moz-scrollbar-thumb
-		@content
-	& ::-webkit-scrollbar-thumb
-		@content
-	& ::scrollbar-thumb
+	&::-webkit-scrollbar-thumb
 		@content
 
 =scrollbar-track-piece
-	& ::-moz-scrollbar-track-piece
-		@content
-	& ::-webkit-scrollbar-track-piece
-		@content
-	& ::scrollbar-track-piece
+	&::-webkit-scrollbar-track-piece
 		@content
 
 //triangle
@@ -240,7 +271,19 @@ $breaklarge: 1180px
 	@if $direction == bl
 		border-width: $width + px 0 0 $height + px
 		border-color: transparent transparent transparent $bg
-
 // example
 // +arr(500,50, #000, l)
 // +arr(500,50, #000, bl)
+
+=rotate($var)
+	-ms-transform: rotate($var+deg)
+	-webkit-transform: rotate($var+deg)
+	transform: rotate($var+deg)
+	
+=blur($var)
+	-webkit-filter: blur($var)
+	filter: blur($var)
+=scale($var)
+	-ms-transform: scale($var)
+	-webkit-transform: scale($var)
+	transform: scale($var)
