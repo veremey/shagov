@@ -31,12 +31,13 @@
 	font-weight: 800
 	font-style: normal
 
+
 =os_light
 	font-family: 'Open Sans', sans-serif
 	font-weight: 300
 	font-style: normal
 
-=os_r
+=os_reg
 	font-family: 'Open Sans', sans-serif
 	font-weight: 400
 	font-style: normal
@@ -51,21 +52,96 @@
 	font-weight: 900
 	font-style: normal
 
+$gold: #95760e
 
+a
+	text-decoration: none
+
+html
+	font-size: 62.5%
 body
-	font: 1rem/1.25 'Open Sans', Arial, sans-serif
+	font: 1.6rem/1.25 'Open Sans', Arial, sans-serif
 
+/* HEADER */
 
-
-
-// common blocks
-
+.header
+	position: relative
+	height: 120px
+	border: 1px solid #cecece
+	background-color: #fff
+	+box-shadow(0 3px 10px rgba(137,137,137,.25))
+	+clr
 .out
-	margin: 20px auto
-	background-color: #503
-	+s(s1)
-	+fs(30)
-
+	width: 90%
+	max-width: 1400px
+	margin: 0 auto
+	+clr
+.header__left
+	float: left
+	width: 145px
+	line-height: 120px
+	+clr
+.soc a
+	position: relative
+	display: inline-block
+	width: 33px
+	height: 33px
+	margin-right: 15px
+	border-radius: 50%
+	border: 1px solid #CECECE
+	&:hover
+		border: 1px solid $gold
+	&:last-child
+		margin-right: 0
+.vk:after
+	content: ""
+	+vcenter
+	+s(vk)
+.f:after
+	content: ""
+	+vcenter
+	+s(f)
+.tw:after
+	content: ""
+	+vcenter
+	+s(tw)
+.main__logo
+	+s(logo)
+	+vcenter
+	+hide-text
+.header__right
+	float: right
+	width: 185px
+	+clr
+.header__right-tel
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		left: -30px
+		+s(phone_ico_grey)
+.header__right-tel_link
+	position: relative
+	display: block
+	text-align: right
+	+fs(16)
+	line-height: 25px
+	color: #222
+.header__right-return
+	position: relative
+	float: right
+	+os_light
+	+fs(13)
+	color: $gold
+	&:hover
+		color: #222
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		left: -30px
+		+s(phone_ico_gold)
 
 
 
