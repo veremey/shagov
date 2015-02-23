@@ -1,19 +1,25 @@
-head.ready(function() {
+$(document).ready(function() {
 
-	// $(document).on("click", function(){
-	// 	$(".js-popup").hide();
-	// });
 
-	// function scrollFixedElements() {
-	//     var scroll_left = $(this).scrollLeft();
-	//     $(".fixed-element").css({
-	//         left: -scroll_left
-	//     });
-	// }
-	// scrollFixedElements();
-	// $(window).scroll(function(){
-	//     scrollFixedElements()
-	// });
+	var overlay = $(".js-overlay");
+		 $(".js-close-popup").click(function (){
+				 $(this).parents(".js-popup").show();
+				 overlay.show();
+		 });
+		 overlay.click(function(){
+				 $(this).hide();
+				 $(".js-popup").hide();
+		 });
 
-	console.log($('body').html());
+		 $(".js-question").click(function (){
+				 $(".js-popup-question").show();
+				 overlay.show();
+				 return false;
+		 });
+		 $(".js-return-link").click(function (){
+				 $(".js-popup-return").show();
+				 overlay.show();
+				 return false;
+		 });
+
 });

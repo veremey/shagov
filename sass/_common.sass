@@ -67,6 +67,7 @@ body
 	position: relative
 	margin: 0 auto
 	width: 95%
+	+clr
 /* HEADER */
 
 .header
@@ -178,9 +179,49 @@ body
 	&__right
 		float: right
 		color: #333
-		width: 350px    ////////  kjshkdjkjkjkjaksjd
-
-
+		margin: 20px 0 0
+		width: 370px    ////////  kjshkdjkjk
+		&_return
+			float: left
+			width: 49%
+			text-align: left
+			margin-right: 45px
+			& a
+				display: inline-block
+				color: $gold
+				+os_light
+				+fs(13)
+				&:hover
+					color: #222
+					border-bottom: 1px solid #222
+		&_contakt
+			float: right
+			width: 49%
+			text-align: left
+			margin-right: -45px
+			& a
+				display: inline-block
+				color: $gold
+				+os_light
+				+fs(13)
+				&:hover
+					color: #222
+					border-bottom: 1px solid #222
+			[href*="0"]
+				color: #222
+				&:hover
+					border-bottom: 1px solid transparent
+	&__content
+		& p
+			text-align: left
+			color: #999
+			+fs(12)
+		+clr
+.very_small_title
+	text-align: left
+	margin-bottom: 3px
+	color: #999
+	+fs(13)
 .footer .out
 	text-align: center
 .copy
@@ -190,7 +231,6 @@ body
 	margin-top: 20px
 	+fs(12)
 	+clr
-
 .f__logo
 	position: relative
 	width: 100%
@@ -199,7 +239,88 @@ body
 		+s(f_logo)
 		+vcenter
 		+hide-text
+/*------------------- popup------------ */
+.overlay
+	display: none
+	position: fixed
+	z-index: 1000
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
 
+.popup
+	display: none
+	position: fixed
+	z-index: 2000
+	top: 100px
+	right: 30px
+	width: 268px
+	height: 198px
+	background: #fff
+	border: 1px solid $gold
+	+clr
+.small
+	width: 268px
+	height: 283px
+	top: 230px
+	left: 510px
+.popup p
+	color: #4A4B4C
+	+fs(13)
+	margin: 0 0 15px 23px
+.popup__top
+	position: relative
+	height: 20px
+.popup__close
+	position: absolute
+	font-size: 18px
+	top: -15px
+	right: -20px
+	width: 16px
+	height: 16px
+	+s(close__popup)
+
+.registration__mail,
+.registration__pass
+	display: block
+	width: 235px
+	height: 20px
+	margin: 0 auto 17px auto
+	padding-left: 10px
+	line-height: 20px
+	background-color: #EFF1F1
+	+placeholder
+		color: #4A4B4C
+		+os_reg
+		+fs(13)
+.enter__question
+	display: block
+	border: none
+	outline-style: none
+	width: 235px
+	height: 83px
+	margin: 0 auto 17px auto
+	padding-left: 10px
+	background-color: #EFF1F1
+	color: #4A4B4C
+	resize: none
+	+fs(12)
+	+placeholder
+		color: #999
+		+os_reg
+		+fs(12)
+.conf
+	margin: 10px auto
+	text-transform: uppercase
+.cansel
+	margin-left: 24px
+	color: #222
+	border-bottom: 1px solid #222
+	+fs(13)
+	&:hover
+		color: $gold
+		border-bottom: 1px solid $gold
 
 
 
