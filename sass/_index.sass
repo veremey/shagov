@@ -42,7 +42,7 @@
 	right: 0
 	padding: 0 18px 20px 20px
 	background-color: #FFF
-	z-index: 99
+	z-index: 9900
 	+box-shadow(0 1px 3px rgba(8,8,8,.2))
 	&_item
 		margin-top: 20px
@@ -53,3 +53,195 @@
 		+fs(16)
 		&:hover
 			color: $gold
+
+.slider
+	position: relative
+	margin: 0 auto 41px
+	float: left
+	width: 75%
+	height: 540px
+
+.cycle-slideshow
+	height: 540px
+	overflow: hidden
+	border-radius: 5px
+.big-slider__item
+	position: static
+	top: 0
+	left: 0
+	z-index: 100
+	opacity: 1
+	visibility: hidden
+	display: block
+	img
+		display: block
+		-webkit-border-radius: 10px 0
+		border-radius: 10px 0
+		height: 540px
+		width: 100%
+		+gray
+
+.nav
+	position: absolute
+	bottom: 40px
+	left: -2px
+	z-index: 999
+	button
+		width: 12px
+		height: 12px
+		border-radius: 50%
+		background-color: #fff
+		opacity: 0.8
+		margin-left: 18px
+		&:hover
+			+scale(1.2)
+	.is-active
+		width: 16px
+		height: 16px
+		border: 1px solid $gold
+		+scale(1.2)
+	+clr
+.big-slider__content
+	position: absolute
+	color: #fff
+	right: 40px
+	left: auto
+	bottom: 40px
+	padding: 15px
+	background-color: #93730b
+	opacity: .85
+	+os_light
+	+fs(15)
+.stock
+	height: 540px
+	width: 23%
+	float: right
+
+// .stock__slider
+// 	position: relative
+.stock__cycle-slideshow
+	position: relative
+	height: 340px
+	overflow: hidden
+.stock__slider__item
+	position: static
+	top: 0
+	left: 0
+	height: 465px
+	z-index: 100
+	opacity: 1
+	visibility: hidden
+	display: block
+	img
+		display: block
+		width: 100%
+		+gray
+
+
+
+
+.stock
+	.nav
+		position: absolute
+		bottom: 40px
+		left: -2px
+		z-index: 999
+		button
+			width: 12px
+			height: 12px
+			border-radius: 50%
+			background-color: #fff
+			opacity: 0.8
+			margin-left: 18px
+			&:hover
+				+scale(1.2)
+		.is-active
+			width: 16px
+			height: 16px
+			border: 1px solid $gold
+			+scale(1.2)
+	+clr
+
+
+
+// .slideshow
+// 	position: relative
+// 	bottom: -20px
+// 	z-index: 10
+// 	+clr
+// .slideshow li
+// 	background: #4db5f4
+// 	color: #fff
+// 	font: 21px/27px 'Ubuntu', Arial, Helvetica, sans-serif  //zxcvbn
+// .slideshow .img-holder
+// 	float: left
+// 	width: 640px
+
+// .slideshow .img-holder a
+// 	display: block
+
+// .slideshow .img-holder img
+// 	width: 100%
+
+// .slideshow .text-holder
+// 	float: left
+// 	width: 240px
+// 	text-align: center
+// 	padding: 30px 30px 20px
+// 	position: relative
+
+// .slideshow .text-holder:before
+// 	position: absolute
+// 	width: 40px
+// 	height: 38px
+// 	top: 50px
+// 	left: -40px
+// 	content: ''
+
+// .slideshow .text-holder p
+// 	margin: 0
+// 	text-align: left
+
+// .slideshow li img
+// 	vertical-align: top
+// 	background-position: 50% 50%
+
+// .bx-pager .bx-pager-item
+// 	display: inline-block
+// 	margin: 2px 5px
+
+// .bx-pager .bx-pager-item a
+// 	+s(s1)// background: url("../images/bg-pager-slider.png") no-repeat
+// 	width: 12px
+// 	height: 12px
+// 	text-indent: -9999px
+// 	display: inline-block
+
+// .bx-pager .bx-pager-item a:hover
+// 	background-position: -45px 0
+
+// .bx-pager .bx-pager-item a.active
+// 	background-position: -23px 0
+
+// .bx-controls-direction a
+// 	// background: url("../images/bg-arrow-slider.png") no-repeat
+// 	width: 20px
+// 	height: 40px
+// 	display: inline-block
+// 	text-indent: -9999px
+// 	position: absolute
+// 	top: -10px
+
+// .bx-controls-direction a.bx-next
+// 	background-position: -43px 0
+// 	right: 50px
+
+// .bx-controls-direction a.bx-prev
+// 	left: 50px
+
+// .bx-controls
+// 	position: absolute
+// 	width: 300px
+// 	text-align: center
+// 	right: 0
+// 	bottom: 30px

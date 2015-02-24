@@ -6,7 +6,6 @@
 	<meta name="viewport" content="initial-scale=1, user-scalable=no">
 	<link rel="icon" type="image/png" href="img/favicon.png">
 	<link rel="stylesheet" media="all" href="css/screen.css" >
-	<script src="js/common.js"></script>
 
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
@@ -27,7 +26,7 @@
 				<a href="tel:+38 (099) 777-13-18 " class="header__right-tel_link">+38 (099) 777-13-18</a><br>
 				<a href="tel:+38 (068) 777-13-18 " class="header__right-tel_link">+38 (068) 777-13-18</a>
 			</div>
-			<a href="#" class="header__right-return js-return-link">Заказать обратный звонок</a>
+			<a href="#" class="header__right-return js-return-link js-enter-link">Заказать обратный звонок</a>
 		</div>
 	</div>
 </header>
@@ -47,10 +46,83 @@
 					<li class="sub__menu_item"><a href="#" class="sub__menu_link">Видео</a></li>
 					<li class="sub__menu_item"><a href="#" class="sub__menu_link">СМИ о нас</a></li>
 				</ul>
-
 			</li>
 			<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
 		</ul>
+	</div>
+	<div class="out">
+		<div class="slider">
+				<ul class="cycle-slideshow"
+					data-cycle-fx="scrollHorz"
+					data-cycle-timeout="3000"
+					data-cycle-slides=".big-slider__item"
+					data-cycle-pager=".js-pager"
+					data-cycle-pager-active-class="is-active"
+					data-cycle-pager-template="<button></button>"
+					data-cycle-prev=".js-big-slider-prev"
+					data-cycle-next=".js-big-slider-next"
+					data-cycle-prev=".js-slider-prev"
+					data-cycle-next=".js-slider-next">
+					<li class="big-slider__item js-big-slider-item">
+						<img src="img/icons/s1.png" alt="">
+						<div class="big-slider__content">Любовь есть желание наслаждаться красотой.<br>
+						Красота же есть некое сияние, влекущее человеческую душу. </div>
+					</li>
+					<li class="big-slider__item js-big-slider-item">
+						<img src="img/icons/s2.png" alt="">
+						<div class="big-slider__content">Любовь есть желание наслаждаться красотой.<br>
+						Красота же есть некое сияние, влекущее человеческую душу. </div>
+					</li>
+					<li class="big-slider__item js-big-slider-item">
+						<img src="img/icons/s3.png" alt="">
+						<div class="big-slider__content">Любовь есть желание наслаждаться красотой.<br>
+						Красота же есть некое сияние, влекущее человеческую душу. </div>
+					</li>
+					<li class="big-slider__item js-big-slider-item">
+						<img src="img/icons/s4.png" alt="">
+						<div class="big-slider__content">Любовь есть желание наслаждаться красотой.<br>
+						Красота же есть некое сияние, влекущее человеческую душу. </div>
+					</li>
+					<li class="big-slider__item js-big-slider-item">
+						<img src="img/icons/s5.png" alt="">
+						<div class="big-slider__content">Любовь есть желание наслаждаться красотой.<br>
+						Красота же есть некое сияние, влекущее человеческую душу. </div>
+					</li>
+				</ul>
+				<div class="nav js-pager"></div>
+				<div class="pager js-slider-pager"></div>
+				<button class="slider__prev js-slider-prev"><i></i></button>
+				<button class="slider__next js-slider-next"><i></i></button>
+		</div> <!-- END SLIDER -->
+		<div class="stock">
+			<h2 class="stock__title">Акция</h2>
+			<div class="stock__slider">
+					<ul class="stock__cycle-slideshow"
+						data-cycle-fx="scrollHorz"
+						data-cycle-timeout="3000"
+						data-cycle-slides=".stock__slider__item"
+						data-cycle-pager=".js-pager"
+						data-cycle-pager-active-class="is-active"
+						data-cycle-pager-template="<button></button>"
+						data-cycle-prev=".js-stock__slider-prev"
+						data-cycle-next=".js-stock__slider-next"
+						data-cycle-prev=".js-stock__slider-prev"
+						data-cycle-next=".js-stock__slider-next">
+						<li class="stock__slider__item js-stock__slider-item">
+							<img src="img/icons/p1.png" alt="">
+							<!-- <div class="stock__slider__content">Любовь есть желание наслаждаться красотой.<br>
+							Красота же есть некое сияние, влекущее человеческую душу. </div> -->
+						</li>
+						<li class="stock__slider__item js-stock__slider-item">
+							<img src="img/icons/s7.png" alt="">
+							<div class="stock__slider__content">Любовь есть желание наслаждаться красотой.<br>
+							Красота же есть некое сияние, влекущее человеческую душу. </div>
+						</li>
+					</ul>
+					<div class="nav js-stock_pager"></div>
+					<div class="pager js-stock_slider-pager"></div>
+		</div>
+
 	</div>
 </div>
 <!--start footer -->
@@ -106,10 +178,10 @@
 	</div>
 </footer>
 <!--end footer -->
-<div class="overlay js-overlay " ></div>
-<div class="popup js-popup js-popup-return" >
+<div class="overlay js-overlay"></div>
+<div class="popup js-popup js-popup-return" ><!--   js-popup-enter -->
 	<div class="popup__top">
-		<button class="popup__close js-close-popup"></button>
+		<button class="popup__close js-close-popup "></button>
 	</div>
 		<p>Оставьте тут свои данные, и мы <br> обязательно Вам перезвоним!</p>
 	<input type="text" name="" class="registration__mail" placeholder="Ваше имя">
@@ -133,7 +205,7 @@
 
 
 <!-- load scripts -->
-
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 
 </body>
 </html>
