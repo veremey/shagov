@@ -1,5 +1,7 @@
 /* ------- main ------------ */
-
+.main
+	background-color: #FAFAFA
+	+clr
 .menu
 	height: 60px
 	margin: 0 auto
@@ -169,8 +171,8 @@
 		&:hover
 			+scale(1.2)
 	.is-active
-		width: 16px
-		height: 16px
+		width: 14px
+		height: 14px
 		border: 1px solid $gold
 		background-color: #DFDFDF
 		+scale(1.2)
@@ -186,87 +188,103 @@
 	color: $gold
 	line-height: 28px
 	+fs(25)
+/*-----------  must know  ------*/
 
+.must__know
+	position: relative
+	width: 96%
+	margin: 0 auto
+	border-bottom: 2px solid $gold
+	+clr
+	&-col
+		width: 48%
+		margin: 45px 10px 80px 15px
+		float: left
+		line-height: 20px
+		color: #333
+		+os_light
+		+fs(16)
+		&:nth-child(2n)
+			float: right
+			margin-right: 0px
 
+.main__title
+	text-align: center
+	color: $gold
+	+os_light
+	+fs(30)
+/* ------------ pazle ------------ */
 
-// .slideshow                         .l;[[[[[]]]]]        ,mjyurddcc
-// 	position: relative
-// 	bottom: -20px
-// 	z-index: 10
-// 	+clr
-// .slideshow li
-// 	background: #4db5f4
-// 	color: #fff
-// 	font: 21px/27px 'Ubuntu', Arial, Helvetica, sans-serif  //zxcvbn
-// .slideshow .img-holder
-// 	float: left
-// 	width: 640px
+.pazzle
+	margin: 58px auto 50px
+	width: 96%
+	text-align: center
+	+clr
+	p
+		margin-top: 18px
+	&__wrap
+		position: relative
+		display: inline-block
+		width: 23%
+		height: 481px
+		border-radius: 0 10px 0 0
+		margin: 0 10px
+		overflow: hidden
+		&:nth-child(2n)
+			top: 35px
+		&:nth-child(4n)
+			margin-right: 0
+		&:after
+			content: ""
+			position: absolute
+			top: 285px
+			right: 15px
+			+arr(14, 15, #dfdfdf, t)
+	&__img
+		-webkit-transform: translate(-25%, 0%)
+		-moz-transform: translate(-25%, 0%)
+		-ms-transform: translate(-25%, 0%)
+		-o-transform: translate(-25%, 0%)
+		transform: translate(-25%, 0%)
+	&__container
+		position: absolute
+		top: 300px
+		left: 0
+		right: 0
+		padding: 35px 28px
+		background-color: #DFDFDF
+		text-align: left
+		color: #222
+		+os_light
+		+fs(16)// ввести меди запросы на уменьшение шрифта
+.event__title
+	margin-bottom: 5px
+	a
+		color: $gold
+		+os_light
+		+fs(22)
+		&:hover
+			color: #222
+			border-bottom: 1px solid #222
 
-// .slideshow .img-holder a
-// 	display: block
-
-// .slideshow .img-holder img
-// 	width: 100%
-
-// .slideshow .text-holder
-// 	float: left
-// 	width: 240px
-// 	text-align: center
-// 	padding: 30px 30px 20px
-// 	position: relative
-
-// .slideshow .text-holder:before
-// 	position: absolute
-// 	width: 40px
-// 	height: 38px
-// 	top: 50px
-// 	left: -40px
-// 	content: ''
-
-// .slideshow .text-holder p
-// 	margin: 0
-// 	text-align: left
-
-// .slideshow li img
-// 	vertical-align: top
-// 	background-position: 50% 50%
-
-// .bx-pager .bx-pager-item
-// 	display: inline-block
-// 	margin: 2px 5px
-
-// .bx-pager .bx-pager-item a
-// 	+s(s1)// background: url("../images/bg-pager-slider.png") no-repeat
-// 	width: 12px
-// 	height: 12px
-// 	text-indent: -9999px
-// 	display: inline-block
-
-// .bx-pager .bx-pager-item a:hover
-// 	background-position: -45px 0
-
-// .bx-pager .bx-pager-item a.active
-// 	background-position: -23px 0
-
-// .bx-controls-direction a
-// 	// background: url("../images/bg-arrow-slider.png") no-repeat
-// 	width: 20px
-// 	height: 40px
-// 	display: inline-block
-// 	text-indent: -9999px
-// 	position: absolute
-// 	top: -10px
-
-// .bx-controls-direction a.bx-next
-// 	background-position: -43px 0
-// 	right: 50px
-
-// .bx-controls-direction a.bx-prev
-// 	left: 50px
-
-// .bx-controls
-// 	position: absolute
-// 	width: 300px
-// 	text-align: center
-// 	right: 0
-// 	bottom: 30px
+.white
+	background-color: #FFF
+	padding: 50px 0
+	+clr
+.event
+	position: relative
+	display: inline-block
+	width: 23%
+	height: 481px
+	margin: 0 10px
+	overflow: hidden
+	+clr
+	&:nth-child(4n)
+		margin-right: 0
+	p
+		margin-top: 18px
+		color: #333
+.date
+	color: #333
+	+os_light
+	+fs(14)
