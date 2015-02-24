@@ -75,13 +75,13 @@
 	display: block
 	img
 		display: block
-		-webkit-border-radius: 10px 0
-		border-radius: 10px 0
+		-webkit-border-radius: 10px 0 10px 0
+		border-radius: 10px 0 10px 0
 		height: 540px
-		width: 100%
+		width: 853px
 		+gray
 
-.nav
+.slider .nav
 	position: absolute
 	bottom: 40px
 	left: -2px
@@ -96,10 +96,9 @@
 		&:hover
 			+scale(1.2)
 	.is-active
-		width: 16px
-		height: 16px
-		border: 1px solid $gold
-		+scale(1.2)
+		width: 12px
+		height: 12px
+		background-color: #949494
 	+clr
 .big-slider__content
 	position: absolute
@@ -113,58 +112,84 @@
 	+os_light
 	+fs(15)
 .stock
+	position: relative
 	height: 540px
 	width: 23%
 	float: right
+	&__title
+		height: 75px
+		line-height: 75px
+		color: $gold
+		+os_light
+		+fs(30)
 
-// .stock__slider
-// 	position: relative
-.stock__cycle-slideshow
+.stock .cycle-slideshow
 	position: relative
-	height: 340px
-	overflow: hidden
-.stock__slider__item
-	position: static
-	top: 0
-	left: 0
 	height: 465px
+	overflow: hidden
+.stock__slider-item
+	position: static
+	bottom: 0
+	left: 0
+	right: 0
 	z-index: 100
 	opacity: 1
 	visibility: hidden
 	display: block
 	img
 		display: block
-		width: 100%
+		width: 285px
+		height: 400px
 		+gray
+.stock__slider__content
+	position: absolute
+	bottom: 0
+	left: 0
+	line-height: 23px
+	color: #333
+	padding: 25px 20px 50px
+	+fs(16)
+	background-color: #dfdfdf
 
-
-
-
-.stock
-	.nav
-		position: absolute
-		bottom: 40px
-		left: -2px
-		z-index: 999
-		button
-			width: 12px
-			height: 12px
-			border-radius: 50%
-			background-color: #fff
-			opacity: 0.8
-			margin-left: 18px
-			&:hover
-				+scale(1.2)
-		.is-active
-			width: 16px
-			height: 16px
-			border: 1px solid $gold
+.stocker
+	position: absolute
+	bottom: 12px
+	height: 20px
+	left: 8px
+	z-index: 99999
+	button
+		display: inline-block
+		width: 12px
+		height: 12px
+		border-radius: 50%
+		background-color: #fff
+		opacity: 0.8
+		margin-left: 15px
+		cursor: pointer
+		&:hover
 			+scale(1.2)
+	.is-active
+		width: 16px
+		height: 16px
+		border: 1px solid $gold
+		background-color: #DFDFDF
+		+scale(1.2)
+	.pager
+		width: 10px
+		height: 10px
+		-webkit-border-radius: 50%
+		border-radius: 50%
+		background-color: #222
+		margin-right: 5px
 	+clr
+.gold__title
+	color: $gold
+	line-height: 28px
+	+fs(25)
 
 
 
-// .slideshow
+// .slideshow                         .l;[[[[[]]]]]        ,mjyurddcc
 // 	position: relative
 // 	bottom: -20px
 // 	z-index: 10

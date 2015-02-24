@@ -55,7 +55,7 @@
 				<ul class="cycle-slideshow"
 					data-cycle-fx="scrollHorz"
 					data-cycle-timeout="3000"
-					data-cycle-slides=".big-slider__item"
+					data-cycle-slides=".js-big-slider-item"
 					data-cycle-pager=".js-pager"
 					data-cycle-pager-active-class="is-active"
 					data-cycle-pager-template="<button></button>"
@@ -90,39 +90,44 @@
 					</li>
 				</ul>
 				<div class="nav js-pager"></div>
-				<div class="pager js-slider-pager"></div>
+				<!-- <div class="pager js-slider-pager"></div> -->
 				<button class="slider__prev js-slider-prev"><i></i></button>
 				<button class="slider__next js-slider-next"><i></i></button>
 		</div> <!-- END SLIDER -->
 		<div class="stock">
 			<h2 class="stock__title">Акция</h2>
-			<div class="stock__slider">
-					<ul class="stock__cycle-slideshow"
+					<ul class="cycle-slideshow"
 						data-cycle-fx="scrollHorz"
-						data-cycle-timeout="3000"
-						data-cycle-slides=".stock__slider__item"
-						data-cycle-pager=".js-pager"
+						data-cycle-timeout="4000"
+						data-cycle-slides=".stock__slider-item"
+						data-cycle-pager=".stocker"
 						data-cycle-pager-active-class="is-active"
 						data-cycle-pager-template="<button></button>"
 						data-cycle-prev=".js-stock__slider-prev"
 						data-cycle-next=".js-stock__slider-next"
 						data-cycle-prev=".js-stock__slider-prev"
 						data-cycle-next=".js-stock__slider-next">
-						<li class="stock__slider__item js-stock__slider-item">
+
+						<li class="stock__slider-item js-stock__slider-item">
 							<img src="img/icons/p1.png" alt="">
-							<!-- <div class="stock__slider__content">Любовь есть желание наслаждаться красотой.<br>
-							Красота же есть некое сияние, влекущее человеческую душу. </div> -->
+							<div class="stock__slider__content">
+								<h4 class="gold__title">Безупречные руки</h4>
+								Любовь есть желание наслаждаться красотой.<br>
+								Красота же есть некое сияние, влекущее человеческую душу. </div>
 						</li>
-						<li class="stock__slider__item js-stock__slider-item">
-							<img src="img/icons/s7.png" alt="">
+						<li class="stock__slider-item js-stock__slider-item">
+							<img src="img/icons/p2.png" alt="">
+							<div class="stock__slider__content">Любовь есть желание наслаждаться красотой.<br>
+							Красота же есть некое сияние, влекущее человеческую душу. </div>
+						</li>
+						<li class="stock__slider-item js-stock__slider-item">
+							<img src="img/icons/p3.png" alt="">
 							<div class="stock__slider__content">Любовь есть желание наслаждаться красотой.<br>
 							Красота же есть некое сияние, влекущее человеческую душу. </div>
 						</li>
 					</ul>
-					<div class="nav js-stock_pager"></div>
-					<div class="pager js-stock_slider-pager"></div>
-		</div>
-
+					<div class="stocker"></div>
+					<div class="pager js-stocker"></div>
 	</div>
 </div>
 <!--start footer -->
