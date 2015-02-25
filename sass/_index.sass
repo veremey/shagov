@@ -63,7 +63,7 @@
 	width: 75%
 	height: 540px
 
-.cycle-slideshow
+.slider .cycle-slideshow
 	height: 540px
 	overflow: hidden
 	border-radius: 5px
@@ -288,3 +288,26 @@
 	color: #333
 	+os_light
 	+fs(14)
+.likes
+	text-align: center
+	margin: 10px auto
+	+clr
+.slider .cycle-slideshow
+	height: 540px
+	overflow: hidden
+	border-radius: 5px
+.big-slider__item
+	position: static
+	top: 0
+	left: 0
+	z-index: 100
+	opacity: 1
+	visibility: hidden
+	display: block
+	img
+		display: block
+		-webkit-border-radius: 10px 0 10px 0
+		border-radius: 10px 0 10px 0
+		height: 540px
+		width: 853px
+		+gray
