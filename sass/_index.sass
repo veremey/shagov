@@ -391,12 +391,19 @@
 		width: 90%
 		&_img
 			position: relative
+			float: left
 			width: 64%
+			height: 495px
 			overflow: hidden
 			border-radius: 10px 0 10px
 			&:after
 				content: ""
 				position: absolute
 				top: 60px
-				right: 20px
+				right: 0px
 				+arr(22, 40, #fff, l)
+		&_container
+			width: 36%
+			float: left
+			padding: 155px 0 0 40px
+			+box

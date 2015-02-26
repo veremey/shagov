@@ -273,5 +273,6 @@ body { font: 1.6rem/1.25 "Open Sans", Arial, sans-serif; }
 .services { margin-top: 40px; *zoom: 1; }
 .services:after { content: " "; display: table; clear: both; }
 .services__left { float: left; width: 90%; }
-.services__left_img { position: relative; width: 64%; overflow: hidden; border-radius: 10px 0 10px; }
-.services__left_img:after { content: ""; position: absolute; top: 60px; right: 20px; width: 0px; height: 0px; border-style: solid; border-width: 20px 22px 20px 0; border-color: transparent white transparent transparent; }
+.services__left_img { position: relative; float: left; width: 64%; height: 495px; overflow: hidden; border-radius: 10px 0 10px; }
+.services__left_img:after { content: ""; position: absolute; top: 60px; right: 0px; width: 0px; height: 0px; border-style: solid; border-width: 20px 22px 20px 0; border-color: transparent white transparent transparent; }
+.services__left_container { width: 36%; float: left; padding: 155px 0 0 40px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
