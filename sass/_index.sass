@@ -5,11 +5,12 @@
 .menu
 	height: 60px
 	margin: 0 auto
+	width: 80%
 	+clr
 	&__item
 		position: relative
 		display: inline-block
-		margin-right: 55px
+		margin-right: 5%
 		&:last-child
 			margin-right: 0
 	&__link
@@ -71,6 +72,7 @@
 	position: static
 	top: 0
 	left: 0
+	width: 100%
 	z-index: 100
 	opacity: 1
 	visibility: hidden
@@ -78,7 +80,7 @@
 
 .big-slider__img
 	position: relative
-	width: 853px
+	width: 100%
 	height: 540px
 	img
 		+coverdiv
@@ -119,20 +121,20 @@
 
 .stock
 	position: relative
-	height: 540px
+	height: 510px
 	width: 23%
+	padding-top: 30px
 	float: right
-	&__title
-		height: 75px
-		line-height: 75px
-		color: $gold
-		+os_light
-		+fs(30)
+.container__title
+	color: $gold
+	+os_light
+	+fs(30)
 
 .stock .cycle-slideshow
 	position: relative
-	height: 465px
+	height: 460px
 	overflow: hidden
+	margin-top: 15px
 .stock__slider-item
 	position: static
 	bottom: 0
@@ -144,7 +146,7 @@
 	display: block
 	img
 		display: block
-		width: 285px
+		width: 100%
 		height: 400px
 		+gray
 .stock__slider__content
@@ -240,6 +242,8 @@
 		width: 23%
 		padding-bottom: 36px
 		margin: 0 10px
+		&:first-child
+			margin-left: 0
 		&:nth-child(2n)
 			top: 35px
 		&:nth-child(4n)
@@ -252,7 +256,8 @@
 			+arr(24, 15, #dfdfdf, t)
 	&__img
 		border-radius: 0 10px 0 0
-		max-height: 285px
+		height: 285px
+		width: 100%
 		overflow: hidden
 	&__container
 		position: relative
@@ -262,8 +267,6 @@
 		color: #222
 		+os_light
 		+fs(16)// ввести меди запросы на уменьшение шрифта
-
-
 .white
 	background-color: #FFF
 	padding: 80px 0
@@ -355,7 +358,6 @@
 		bottom: -17px
 		right: -50px
 		+s(q_close)
-
 .likes_nav
 	position: absolute
 	bottom: 25px
@@ -384,26 +386,141 @@
 /* ---------- services.html  -------------- */
 
 .services
-	margin-top: 40px
+	margin: 40px 0 165px
 	+clr
-	&__left
+	&__left,
+	&__right
 		float: left
 		width: 90%
-		&_img
-			position: relative
-			float: left
-			width: 64%
-			height: 495px
-			overflow: hidden
-			border-radius: 10px 0 10px
-			&:after
-				content: ""
-				position: absolute
-				top: 60px
-				right: 0px
-				+arr(22, 40, #fff, l)
-		&_container
-			width: 36%
-			float: left
+		background-color: #FFF
+		+clr
+	&__img_left,
+	&__img_right
+		position: relative
+		float: left
+		width: 64%
+		height: 495px
+		overflow: hidden
+		border-radius: 10px 0 0 10px
+		img
+			width: 100%
+			height: 100%
+		&:after
+			content: ""
+			position: absolute
+			top: 60px
+			right: 0px
+			+arr(22, 40, #fff, l)
+	&__container
+		position: relative
+		width: 36%
+		float: left
+		height: 495px
+		&_wrap
 			padding: 155px 0 0 40px
 			+box
+	&__wrap
+		margin: 30px 0 30px 80px
+	&__link
+		display: inline
+		color: #222
+		line-height: 44px
+		border-bottom: 1px solid #222
+		+os_light
+		+fs(25)
+		&:hover
+			border-bottom: none
+	&__right
+		float: right
+	&__img_right
+		float: right
+		border-radius: 0 10px 10px 0
+		&:after
+			display: none
+		&:before
+			content: ""
+			position: absolute
+			top: 60px
+			left: 0
+			+arr(22, 40, #000, r)
+.services__definition
+	margin: 140px 40px 50px
+
+
+
+/*  ------------------  butyfication.html -------------- */
+
+.services__cover
+	width: 100%
+	background-color: #FFF
+	+clr
+.baner
+	margin: 40px 0 50px
+	+clr
+.lp
+	margin: 0 20px 135px
+.therapy
+	display: table
+	position: relative
+	background-color: #FFF
+	&:first-child
+		padding-top: 30px
+	&:last-child
+		padding-bottom: 30px
+	&__item
+		display: table-cell
+		width: 25%
+	+clr
+.therapy__img
+	display: block
+	margin: 0
+	padding: 0
+	width: 100%
+	height: 340px
+.therapy__container
+	width: calc(100%-64px)
+	height: 276px
+	background-color: #CECECE
+	color: #333
+	padding: 32px
+.therapy__title
+	color: #333
+	margin-bottom: 20px
+	+os_light
+	+fs(20)
+.therapy__list
+	display: inline-block
+	position: relative
+	padding-left: 10px
+	color: #333
+	+os_light
+	+fs(15)
+	&:before
+		content: "-"
+		position: absolute
+		top: -2px
+		left: -5px
+		color: #333
+.photo__before
+	position: relative
+	color: #333
+	margin-left: 30px
+	top: 30px
+	line-height: 20px
+	border-bottom: 1px solid #333
+	+os_light
+	+fs(18)
+	&:hover
+		border-bottom: none
+	&:before
+		content: ""
+		position: absolute
+		top: -2px
+		left: -35px
+		+s(photo_pic)
+.gray
+	+gray
+
+
+/* --------------------technology.html ---------------- */
+
