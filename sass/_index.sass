@@ -269,10 +269,10 @@
 		+fs(16)// ввести меди запросы на уменьшение шрифта
 .white
 	background-color: #FFF
-	padding: 80px 0
+	padding: 80px 0 0
 	+clr
 .event
-	margin-top: 40px
+	margin: 40px 0 80px
 	+clr
 .event__wrap
 	position: relative
@@ -330,7 +330,8 @@
 	margin-top: 10px
 	.spector
 		margin: 23px auto
-.name
+.name,
+.name a
 	color: #333
 	+fs(20)
 .spector
@@ -454,6 +455,15 @@
 	width: 100%
 	background-color: #FFF
 	+clr
+.services__center
+	width: 465px
+	height: 250px
+	position: absolute
+	top: 50%
+	margin-top: -150px
+	margin-left: 25px
+	+clr
+
 .baner
 	margin: 40px 0 50px
 	+clr
@@ -522,5 +532,108 @@
 	+gray
 
 
-/* --------------------technology.html ---------------- */
+/* --------------------doctors.html ---------------- */
 
+.small__title
+	margin-bottom: 15px
+	color: #222
+	line-height: 22px
+	+fs(16)
+.doctor
+	margin: 10px 0 95px
+	padding: 34px 0 0
+	border-top: 1px solid #CECECE
+
+
+/* ---------------------- technology.html --------------------- */
+
+.technology
+	margin-top: 74px
+	+clr
+
+
+/* -----------------------news.html _--------------------- */
+
+.period
+	line-height: 20px
+	color: #333
+	+fs(15)
+	a
+		line-height: 25px
+		color: $gold
+		margin: 0 5px
+		border-bottom: 1px solid $gold
+		+fs(15)
+		&:hover
+			border-bottom: none
+	.is-active
+		color: #333
+		border-bottom: none
+		+os_bold
+.pages
+	margin-bottom: 75px
+.pages__wrap
+	position: absolute
+	left: 50%
+	width: 500px
+	+translate(-50%,0)
+	+clr
+	a
+		display: inline-block
+		color: #333
+		&:hover
+			color: $gold
+	.is-active
+		position: relative
+		color: #fff
+		padding: 8px 5px 10px 17px
+		background-color: #333
+		margin: 0 20px 0 -17px
+.pages__item
+	margin-right: 25px
+.pages__prev
+	margin-left: 20px
+
+.event__label
+	color: #686868
+	margin: 10px 0 15px
+	+fs(16)
+
+
+/*  -------------------------------media.html --------------------- */
+
+.gallery
+	background-color: #FFF
+	padding: 40px 0 50px
+	+clr
+.gallery__img
+	display: inline-block
+	max-width: 170px
+	max-height: 170px
+	width: 100%
+	margin: 0 6px 6px -5px
+	border: none
+	outline: none
+	padding: 0
+	&:first-child
+		margin-left: 0
+	&:last-child
+		margin-right: 0
+.wrapper
+	margin: 40px 0 50px
+.video
+	width: 49%
+	margin-right: 2%
+	+clr
+	&:nth-child(2n)
+		margin-right: 0
+	img
+		position: relative
+		width: 100%
+		max-width: 320px
+		max-height: 320px
+		height: 100%
+		&:after
+			content: ""
+			+vcover
+			+s(play)
