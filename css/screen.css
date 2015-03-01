@@ -70,13 +70,13 @@ body { font: 1.6rem/1.25 "Open Sans", Arial, sans-serif; }
 /*----- FOOTER------- */
 .footer { border-top: 1px solid #CECECE; *zoom: 1; }
 .footer:after { content: " "; display: table; clear: both; }
-.footer__menu { margin: 0 auto; height: 60px; border-bottom: 1px solid #95760e; *zoom: 1; }
+.footer__menu { margin: 0 auto; height: 60px; border-bottom: 1px solid #95760e; min-width: 950px; *zoom: 1; }
 .footer__menu:after { content: " "; display: table; clear: both; }
 .footer__menu_item { display: inline-block; width: 13%; margin-right: 1%; line-height: 60px; }
 .footer__menu_item:last-child { margin-right: 0; }
 .footer__menu_link { display: inline; font-size: 14px; font-size: 1.4rem; color: #999; }
 .footer__menu_link:hover { color: #222; border-bottom: 1px solid #222; }
-.footer__soc { position: absolute; top: 50%; left: 50%; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+.footer__soc { float: left; width: 170px; margin: 25px 0 0 265px; }
 .footer__right { float: right; color: #333; margin: 20px 0 0; width: 370px; }
 .footer__right_return { float: left; width: 49%; text-align: left; margin-right: 45px; }
 .footer__right_return a { display: inline-block; color: #95760e; font-family: "Open Sans", sans-serif; font-weight: 300; font-style: normal; font-size: 13px; font-size: 1.3rem; }
@@ -94,7 +94,7 @@ body { font: 1.6rem/1.25 "Open Sans", Arial, sans-serif; }
 
 .footer .out { text-align: center; }
 
-.copy { float: left; width: 350px; color: #6F6F6F; margin-top: 20px; font-size: 12px; font-size: 1.2rem; *zoom: 1; }
+.copy { float: left; color: #6F6F6F; margin-top: 20px; font-size: 12px; font-size: 1.2rem; *zoom: 1; }
 .copy:after { content: " "; display: table; clear: both; }
 
 .f__logo { position: relative; width: 100%; height: 120px; }
@@ -146,7 +146,7 @@ body { font: 1.6rem/1.25 "Open Sans", Arial, sans-serif; }
 .main { background-color: #FAFAFA; min-width: 1000px; *zoom: 1; }
 .main:after { content: " "; display: table; clear: both; }
 
-.menu { height: 60px; margin: 0 auto; width: 85%; *zoom: 1; }
+.menu { height: 60px; margin: 0 auto; width: 85%; min-width: 950px; *zoom: 1; }
 .menu:after { content: " "; display: table; clear: both; }
 .menu__item { position: relative; display: inline-block; margin-right: 4%; }
 .menu__item:last-child { margin-right: 0; }
@@ -295,15 +295,14 @@ body { font: 1.6rem/1.25 "Open Sans", Arial, sans-serif; }
 
 .lp { margin: 0 20px 135px; }
 
-.therapy { display: table; position: relative; background-color: #FFF; *zoom: 1; }
+.therapy { display: table; table-layout: fixed; position: relative; background-color: #FFF; *zoom: 1; }
 .therapy:first-child { padding-top: 30px; }
 .therapy:last-child { padding-bottom: 30px; }
-.therapy__item { display: table-cell; width: 25%; }
+.therapy__item, .therapy__pic { display: table-cell; width: 25%; background-color: #CECECE; color: #333; padding: 32px 32px 60px; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; }
+.therapy__pic { padding: 0; }
 .therapy:after { content: " "; display: table; clear: both; }
 
 .therapy__img { display: block; margin: 0; padding: 0; width: 100%; height: 340px; }
-
-.therapy__container { width: calc(100%-64px); height: 276px; background-color: #CECECE; color: #333; padding: 32px; }
 
 .therapy__title { color: #333; margin-bottom: 20px; font-family: "Open Sans", sans-serif; font-weight: 300; font-style: normal; font-size: 20px; font-size: 2rem; }
 
@@ -313,8 +312,7 @@ body { font: 1.6rem/1.25 "Open Sans", Arial, sans-serif; }
 .photo__before { position: relative; color: #333; margin-left: 30px; top: 30px; line-height: 20px; border-bottom: 1px solid #333; font-family: "Open Sans", sans-serif; font-weight: 300; font-style: normal; font-size: 18px; font-size: 1.8rem; }
 .photo__before:hover { border-bottom: none; }
 .photo__before:before { content: ""; position: absolute; top: -2px; left: -35px; background: url('../img/icons-scfa5dc3cc2.png') 0 -4219px no-repeat; width: 27px; height: 23px; }
-
-.gray { filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale"); filter: gray; -webkit-filter: grayscale(100%); filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1); -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)"; }
+@media screen and (max-width: 1350px) { .photo__before { top: 15px; } }
 
 /* --------------------doctors.html ---------------- */
 .small__title { margin-bottom: 15px; color: #222; line-height: 22px; font-size: 16px; font-size: 1.6rem; }
@@ -493,6 +491,8 @@ body { font: 1.6rem/1.25 "Open Sans", Arial, sans-serif; }
 .black__bg .therapy__title { color: #FFF !important; }
 .black__bg .photo__before { color: #aeaeae !important; }
 .black__bg p { color: #AEAEAE; }
+
+.gray { filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale"); filter: gray; -webkit-filter: grayscale(100%); filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1); -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)"; }
 
 .pazzle__big { width: 30%; margin: 0 2% 0 1%; }
 .pazzle__big:last-child { margin-right: 1%; }

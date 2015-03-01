@@ -7,6 +7,7 @@
 	height: 60px
 	margin: 0 auto
 	width: 85%
+	min-width: 950px
 	+clr
 	&__item
 		position: relative
@@ -472,15 +473,25 @@
 	margin: 0 20px 135px
 .therapy
 	display: table
+	table-layout: fixed
 	position: relative
 	background-color: #FFF
 	&:first-child
 		padding-top: 30px
 	&:last-child
 		padding-bottom: 30px
-	&__item
+	&__item,
+	&__pic
 		display: table-cell
 		width: 25%
+		background-color: #CECECE 
+		color: #333
+		padding: 32px 32px 60px
+		-webkit-box-sizing: content-box
+		-moz-box-sizing: content-box
+		box-sizing: content-box
+	&__pic
+		padding: 0
 	+clr
 .therapy__img
 	display: block
@@ -488,12 +499,7 @@
 	padding: 0
 	width: 100%
 	height: 340px
-.therapy__container
-	width: calc(100%-64px)
-	height: 276px
-	background-color: #CECECE
-	color: #333
-	padding: 32px
+
 .therapy__title
 	color: #333
 	margin-bottom: 20px
@@ -529,8 +535,9 @@
 		top: -2px
 		left: -35px
 		+s(photo_pic)
-.gray
-	+gray
+	+max-screen(1350)
+		top: 15px
+
 
 
 /* --------------------doctors.html ---------------- */
