@@ -193,7 +193,7 @@
 		<input type="submit" class="btn conf" value="Отправить">
 </div>
 
-<div class="popup small js-popup js-popup-question">
+<div class="popup small js-popup js-popup-question"> <!--   js-popup-register -->
 	<div class="popup__top">
 		<button class="popup__close js-close-popup"></button>
 	</div>
@@ -204,8 +204,23 @@
 	<a href="#" class="fogot">Fogot password?</a>
 		<input type="submit" class="btn conf" value="Отправить">
 	</div>
+</div>
+<div class="overlay_black js-overlay" style="display:block"></div>
+<div class="popup middle js-popup js-popup-question" style="display:block">
+	<div id=adv-custom-pager class="center external"></div>
+	<div class="cycle-slideshow cycle__faces" 
+    data-cycle-fx=scrollHorz
+    data-cycle-timeout=0
+    data-cycle-pager="#adv-custom-pager"
+    data-cycle-pager-template="<a href='#'><img src='{{src}}' width=160 height=100></a>"
+    >
+    <img src="http://malsup.github.io/images/p1.jpg">
+    <img src="http://malsup.github.io/images/p2.jpg">
+    <img src="http://malsup.github.io/images/p3.jpg">
+    <img src="http://malsup.github.io/images/p4.jpg">
+	</div>
 
-
+</div>
 
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>

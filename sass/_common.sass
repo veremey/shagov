@@ -84,7 +84,6 @@ body
 	+clr
 .header__left
 	float: left
-	width: 145px
 	line-height: 120px
 	+clr
 .soc a
@@ -241,7 +240,8 @@ body
 		+vcenter
 		+hide-text
 /*------------------- popup------------ */
-.overlay
+.overlay,
+.overlay_black
 	display: none
 	position: fixed
 	z-index: 1000
@@ -249,8 +249,8 @@ body
 	bottom: 0
 	right: 0
 	left: 0
-
-
+.overlay_black
+	background-color: rgba(0, 0, 0, .6)
 .popup
 	display: none
 	position: fixed
@@ -267,6 +267,7 @@ body
 	height: 283px
 	top: 230px
 	left: 510px
+
 .popup p
 	color: #4A4B4C
 	+fs(13)
@@ -324,10 +325,36 @@ body
 		color: $gold
 		border-bottom: 1px solid $gold
 
+.middle
+	width: 960px
+	height: 700px
+	top: 150px
+	left: 50%
+	padding-bottom: 15px
+	-webkit-transform: translate(-50%)
+	-moz-transform: translate(-50%)
+	-ms-transform: translate(-50%)
+	-o-transform: translate(-50%)
+	transform: translate(-50%)
 
-
-
-
+.cycle__faces img
+	width: 930px
+	// height: 535px
+	-webkit-transform: translate(0, 125px)
+	-moz-transform: translate(0, 125px)
+	-ms-transform: translate(0, 125px)
+	-o-transform: translate(0, 125px)
+	transform: translate(0, 125px)
+	left: 15px!important
+.center
+	position: absolute
+	top: 15px
+	left: 50%
+	margin-left: -340px
+	z-index: 130
+	img
+		height: 100px
+		
 
 
 

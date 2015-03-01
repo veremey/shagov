@@ -25,4 +25,26 @@ $(document).ready(function(){
 
 
 
+		function initAccordion() {
+    if($('.accordion').length) {
+        $('.accordion .opener').on('click', function(e){
+            if(!$(this).hasClass('active')) {
+                $('.accordion .slide').slideUp();
+                $('.accordion .opener').removeClass('active');
+                $(this).next('.slide').slideDown();
+                $(this).addClass('active');
+            } else {
+                $(this).next('.slide').slideUp();
+                $(this).removeClass('active');
+            }
+            e.preventDefault();
+        })
+        $('.accordion .hide').on('click', function(e){
+            $(this).parent().slideUp();
+            $(this).parent().prev('.opener').removeClass('active');
+            e.preventDefault();
+        })
+    }
+}
+
 });
