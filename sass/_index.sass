@@ -224,9 +224,12 @@
 .main__title
 	text-align: center
 	color: $gold
-	margin-top: 60px //02.03
+	// margin-top: 60px //02.03
 	+os_light
 	+fs(30)
+.out
+	.main__title
+		margin-top: 60px
 /* ------------ pazle ------------ */
 
 .pazzle
@@ -412,7 +415,7 @@
 		position: relative
 		float: left
 		width: 64%
-		height: 495px
+		// height: 495px  02.03
 		overflow: hidden
 		border-radius: 10px 0 0 10px
 		img
@@ -457,11 +460,11 @@
 			left: 0
 			+arr(22, 40, #000, r)
 .services__definition
-	margin: 140px 40px 50px
+	margin: 140px 40px 16px
 	+max-screen(1300)
 		margin-top: 40px
 	+max-screen(1200)
-		margin: 30px 15px 10px
+		margin: 30px 15px 0px
 
 
 
@@ -487,7 +490,7 @@
 	margin: 40px 0 50px
 	+clr
 .lp
-	margin: 0 20px 135px
+	margin: 0 10px 135px
 .therapy
 	display: table
 	table-layout: fixed
@@ -663,7 +666,7 @@
 		width: 590px
 		margin-right: 15px
 	+max-screen(1350)
-		float: none
+		width: 500px
 		margin: 30px auto
 	&:nth-child(2n)
 		margin-right: 0
@@ -677,10 +680,8 @@
 		float: left
 		+max-screen(1400)
 			width: 275px
-		// +max-screen(1350)
-		// 	display: table-cell
-		// 	float: left
-		// 	width: 380px
+		+max-screen(1350)
+			width: 200px
 		img
 			width: 100%
 			height: auto
@@ -704,11 +705,17 @@
 	+max-screen(1400)
 		width: 275px
 		padding: 15px 15px 0px 10px
+	+max-screen(1200)
+		padding: 5px 5px 0px 5px
 	// +max-screen(1350)
 	// 	display: table-cell
 	// 	float: left
 	// 	width: 395px
 	// 	height: 365px
+	.name
+		a
+
+			+fs(15)
 	.date
 		margin: 10px 0 20px
 
