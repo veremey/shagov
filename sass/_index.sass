@@ -193,6 +193,7 @@
 .gold__title
 	color: $gold
 	line-height: 28px
+	margin-bottom: 15px //02.03
 	+fs(25)
 /*-----------  must know  ------*/
 
@@ -223,6 +224,7 @@
 .main__title
 	text-align: center
 	color: $gold
+	margin-top: 60px //02.03
 	+os_light
 	+fs(30)
 /* ------------ pazle ------------ */
@@ -458,6 +460,9 @@
 	margin: 140px 40px 50px
 	+max-screen(1300)
 		margin-top: 40px
+	+max-screen(1200)
+		margin: 30px 15px 10px
+
 
 
 /*  ------------------  butyfication.html -------------- */
@@ -467,12 +472,15 @@
 	background-color: #FFF
 	+clr
 .services__center
-	width: 465px
 	height: 250px
-	position: absolute
+	position: relative
 	top: 50%
 	margin-top: -150px
 	margin-left: 25px
+	+max-screen(1300)
+		margin-top: -250px
+	+max-screen(1200)
+		margin: -250px 15px 10px
 	+clr
 
 .baner
@@ -799,70 +807,66 @@
 	width: 420px
 	height: auto
 	float: right
-	// http://lorempixel.com/output/people-q-c-420-420-6.jpg
+	// src="img/icons/d1.png"
 .pic2
 	width: 130px
 	height: auto
 	float: left
 	margin: 0 15px 15px 150px
-	// c
+	// src="img/icons/d2.png"
 .pic3
 	width: 270px
 	height: auto
 	float: left
-	// http://lorempixel.com/output/cats-q-c-270-270-5.jpg
+	// src="img/icons/d3.png"
 .pic4
 	width: 125px
 	height: auto
 	margin: 20px 15px 15px
 	float: left
-	// http://lorempixel.com/output/cats-q-c-125-125-7.jpg
+	// src="img/icons/w2.png"
 .pic5
 	width: 275px
 	height: auto
 	margin: 15px 0
 	float: left
-	//  http://lorempixel.com/output/cats-q-c-275-275-8.jpg
+	//  src="img/icons/w1.png"
 .pic6
 	width: 275px
 	height: auto
 	margin-top: -285px
 	float: left
-	//  http://lorempixel.com/output/cats-q-c-275-275-8.jpg
+	//  src="img/icons/w1.png"
 .pic7
 	width: 125px
 	height: auto
 	float: left
 	margin: -135px 0 0 293px
-	// http://lorempixel.com/output/cats-q-c-125-125-7.jpg
+	// src="img/icons/w2.png"
 .pic8
 	width: 270px
 	height: auto
 	float: right
 	margin: -145px 295px 0 0px
-	// http://lorempixel.com/output/cats-q-c-270-270-5.jpg
+	// src="img/icons/d3.png"
 .pic9
 	width: 125px
 	height: auto
 	float: right
 	margin: 20px 5px 20px 0px
-	// http://lorempixel.com/output/cats-q-c-125-125-7.jpg
+	// src="img/icons/w2.png"
 .pic10
 	width: 275px
 	height: auto
 	float: left
-	-webkit-transform: translate(0, -235px)
-	-moz-transform: translate(0, -235px)
-	-ms-transform: translate(0, -235px)
-	-o-transform: translate(0, -235px)
-	transform: translate(0, -235px)
-		//  http://lorempixel.com/output/cats-q-c-275-275-8.jpg
+	margin-top: -235px
+		//  src="img/icons/w1.png"
 .pic11
 	width: 125px
 	height: auto
 	float: left
 	margin: 20px 20px 20px 0px
-	// http://lorempixel.com/output/cats-q-c-125-125-7.jpg
+	// src="img/icons/w2.png"
 .pic12
 	width: 415px
 	height: auto   //315
@@ -920,7 +924,7 @@
 		height: 180px
 		vertical-align: top
 .caption
-	margin: -60px 0 60px
+	margin: -55px 70px 60px
 	+max-screen(1050)
 		margin-left: 20px
 .caption .date
