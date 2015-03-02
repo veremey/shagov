@@ -3,9 +3,9 @@ $(document).ready(function(){
 
 
 		var overlay = $(".js-overlay");
-		$(".js-close-popup").click(function (){
-				$(this).parents(".js-popup").show();
-				overlay.show();
+		$(".js-close-popup").click(function(){
+				$(this).parents(".js-popup").hide();
+				overlay.hide();
 		});
 		overlay.click(function(){
 				$(this).hide();
@@ -22,10 +22,15 @@ $(document).ready(function(){
 				overlay.show();
 				return false;
 		});
+		$(".js-photo").click(function(){
+				$(".js-popup-photo").show();
+				overlay.show();
+				return false;
+		});
 
 
 
-		function initAccordion() {
+	function initAccordion() {
     if($('.accordion').length) {
         $('.accordion .opener').on('click', function(e){
             if(!$(this).hasClass('active')) {

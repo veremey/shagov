@@ -73,7 +73,7 @@ body
 .header
 	position: relative
 	height: 120px
-	border: 1px solid #cecece
+	border-bottom: 1px solid #cecece
 	background-color: #fff
 	+box-shadow(0 3px 10px rgba(137,137,137,.25))
 	+clr
@@ -154,6 +154,7 @@ body
 
 .footer
 	border-top: 1px solid #CECECE
+	min-width: 1000px 
 	+clr
 	&__menu
 		margin: 0 auto
@@ -180,6 +181,8 @@ body
 		float: left
 		width: 170px
 		margin: 25px 0 0 265px 
+		+max-screen(1200)
+			margin-left: 100px 
 	&__right
 		float: right
 		color: #333
@@ -316,22 +319,26 @@ body
 		color: #999
 		+os_reg
 		+fs(12)
-.conf
-	margin: 10px auto
-	text-transform: uppercase
 .cansel
 	margin-left: 24px
+	margin-top: 30px
 	color: #222
 	border-bottom: 1px solid #222
 	+fs(13)
 	&:hover
 		color: $gold
 		border-bottom: 1px solid $gold
-
+.btn
+	width: 80px
+	height: 30px
+	float: right
+	margin-right: 20px
+	text-transform: uppercase
+	+fs(13)
 .middle
 	width: 960px
 	height: 700px
-	top: 150px
+	top: 15px
 	left: 50%
 	padding-bottom: 15px
 	-webkit-transform: translate(-50%)

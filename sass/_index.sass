@@ -82,7 +82,7 @@
 
 .big-slider__img
 	position: relative
-	width: 100%
+	width: 100%  /* w: auto */
 	height: 540px
 	img
 		+coverdiv
@@ -149,7 +149,7 @@
 	img
 		display: block
 		width: 100%
-		height: 400px
+		height: auto //400
 		+gray
 .stock__slider__content
 	position: absolute
@@ -244,23 +244,29 @@
 		width: 23%
 		padding-bottom: 36px
 		margin: 0 10px
+		+max-screen(1100)
+			width: 22% 
 		&:first-child
 			margin-left: 0
 		&:nth-child(2n)
 			top: 35px
 		&:nth-child(4n)
 			margin-right: 0
+	&__img
+		position: relative
+		border-radius: 0 10px 0 0
+		height: auto /* 285*/
+		width: 100%
+		vertical-align: bottom
+		overflow: hidden
+		img
+			vertical-align: bottom
 		&:after
 			content: ""
 			position: absolute
-			top: 270px
+			bottom: -1px
 			right: 15px
 			+arr(24, 15, #dfdfdf, t)
-	&__img
-		border-radius: 0 10px 0 0
-		height: 285px
-		width: 100%
-		overflow: hidden
 	&__container
 		position: relative
 		padding: 35px 28px
@@ -283,6 +289,10 @@
 	margin: 0 10px
 	overflow: hidden
 	+clr
+	+max-screen(1100)
+		width: 22% 
+	&:first-child
+		margin-left: 0
 	&:nth-child(4n)
 		margin-right: 0
 	p
@@ -407,7 +417,7 @@
 		border-radius: 10px 0 0 10px
 		img
 			width: 100%
-			height: 100%
+			height: auto
 		&:after
 			content: ""
 			position: absolute
@@ -448,7 +458,8 @@
 			+arr(22, 40, #000, r)
 .services__definition
 	margin: 140px 40px 50px
-
+	+max-screen(1150)
+		margin-top: 40px
 
 
 /*  ------------------  butyfication.html -------------- */
@@ -483,6 +494,7 @@
 	&__item,
 	&__pic
 		display: table-cell
+		word-break: break-all
 		width: 25%
 		background-color: #CECECE 
 		color: #333
@@ -492,13 +504,15 @@
 		box-sizing: content-box
 	&__pic
 		padding: 0
+		vertical-align: top
 	+clr
 .therapy__img
 	display: block
 	margin: 0
 	padding: 0
-	width: 100%
-	height: 340px
+	width: 100%  
+	height: auto/*  :340 */
+
 
 .therapy__title
 	color: #333
@@ -600,7 +614,7 @@
 .pages__item
 	margin-right: 25px
 .pages__prev
-	margin-left: 20px
+	margin-right: 20px
 
 .event__label
 	color: #686868
@@ -616,34 +630,51 @@
 	+clr
 .gallery__img
 	display: inline-block
-	height: 170px
-	width: 11%
+	width: 12%
 	margin: 0 6px 6px -5px
 	border: none
 	outline: none
 	padding: 0
+	+max-screen(1100)
+		width: 11.8%
 	&:first-child
 		margin-left: 0
 	&:last-child
 		margin-right: 0
 .wrapper
+	position: relative
 	margin: 40px 0 50px
 	+clr
 .video
-	width: 49%
-	margin-right: 2%
+	width: 670px
+	margin-right: 30px
 	float: left
 	+clr
+	+max-screen(1400)
+		width: 590px
+		margin-right: 15px
+	+max-screen(1350)
+		float: none
+		margin: 30px auto
 	&:nth-child(2n)
 		margin-right: 0
+		+max-screen(1350)
+			margin: 30px auto
 	&__img
 		position: relative
 		width: 320px
-		height: 320px
+		height: auto //320
+		vertical-align: top
 		float: left
+		+max-screen(1400)
+			width: 275px 
+		// +max-screen(1350)
+		// 	display: table-cell
+		// 	float: left
+		// 	width: 380px
 		img
 			width: 100%
-			height: 100%
+			height: auto
 		&:after
 			content: ""
 			border-radius: 50%
@@ -658,6 +689,17 @@
 	height: 260px
 	padding: 30px 30px 30px 20px
 	background-color: #dfdfdf
+	-webkit-box-sizing: content-box
+	-moz-box-sizing: content-box
+	box-sizing: content-box
+	+max-screen(1400)
+		width: 275px 
+		padding: 15px 15px 0px 10px
+	// +max-screen(1350)
+	// 	display: table-cell
+	// 	float: left
+	// 	width: 395px
+	// 	height: 365px
 	.date
 		margin: 10px 0 20px
 
@@ -725,7 +767,7 @@
 	background-color: #909090
 .step__img
 	width: 25%
-	height: 340px
+	height: 340px /* auto */
 	float: left
 .step__container
 	padding: 45px 60px
@@ -754,70 +796,83 @@
 	+fs(16) 
 .pic1
 	width: 420px
-	height: 420px
+	height: auto
 	float: right
+	// http://lorempixel.com/output/people-q-c-420-420-6.jpg
 .pic2
 	width: 130px
-	height: 130px
+	height: auto
 	float: left
 	margin: 0 15px 15px 150px
+	// c
 .pic3
 	width: 270px
-	height: 270px
+	height: auto
 	float: left
+	// http://lorempixel.com/output/cats-q-c-270-270-5.jpg
 .pic4
 	width: 125px
-	height: 125px
+	height: auto
 	margin: 20px 15px 15px 
 	float: left
+	// http://lorempixel.com/output/cats-q-c-125-125-7.jpg
 .pic5
 	width: 275px
-	height: 275px
+	height: auto
 	margin: 15px 0
 	float: left
+	//  http://lorempixel.com/output/cats-q-c-275-275-8.jpg
 .pic6
 	width: 275px
-	height: 275px
+	height: auto
 	margin-top: -285px
 	float: left
+	//  http://lorempixel.com/output/cats-q-c-275-275-8.jpg
 .pic7
 	width: 125px
-	height: 125px
+	height: auto
 	float: left
 	margin: -135px 0 0 293px
+	// http://lorempixel.com/output/cats-q-c-125-125-7.jpg
 .pic8
 	width: 270px
-	height: 270px
+	height: auto
 	float: right
 	margin: -145px 295px 0 0px
+	// http://lorempixel.com/output/cats-q-c-270-270-5.jpg
 .pic9
 	width: 125px
-	height: 125px
+	height: auto
 	float: right
 	margin: 20px 5px 20px 0px
+	// http://lorempixel.com/output/cats-q-c-125-125-7.jpg
 .pic10
 	width: 275px
-	height: 275px
+	height: auto
 	float: left
 	-webkit-transform: translate(0, -235px)
 	-moz-transform: translate(0, -235px)
 	-ms-transform: translate(0, -235px)
 	-o-transform: translate(0, -235px)
 	transform: translate(0, -235px)
+		//  http://lorempixel.com/output/cats-q-c-275-275-8.jpg
 .pic11
 	width: 125px
-	height: 125px
+	height: auto
 	float: left
 	margin: 20px 20px 20px 0px
+	// http://lorempixel.com/output/cats-q-c-125-125-7.jpg
 .pic12
 	width: 415px
-	height: 315px
+	height: auto   //315
 	float: left
 	margin: 20px 10px 0px 0px
+	//http://lorempixel.com/output/cats-q-c-415-315-1.jpg
 .pic14
 	width: 200px
-	height: 200px
+	height: auto
 	float: left
+	//http://lorempixel.com/output/cats-q-c-200-200-9.jpg
 	
 	/* -----------  accordion ---- */
 	
@@ -825,14 +880,16 @@
 	max-width: 1155px 
 	margin: 0 auto 125px
 	+clr
+	+max-screen(1150)
+		margin: 0 20px 125px 
 	p
 		color: #333
 		line-height: 22px
-.accordion
-	.active
-		+ .slide
-			display: block
-	+clr
+// .accordion
+// 	.active
+// 		+ .slide
+// 			display: block
+// 	+clr
 .accordion__list
 	border-bottom: 1px solid #CECECE 
 .accordion__link
@@ -863,6 +920,8 @@
 		vertical-align: top
 .caption
 	margin: -60px 0 60px
+	+max-screen(1050)
+		margin-left: 20px
 .caption .date
 	+fs(18)
 
