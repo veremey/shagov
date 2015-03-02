@@ -80,6 +80,7 @@ body
 .out
 	width: 90%
 	max-width: 1400px
+	min-width: 1000px
 	margin: 0 auto
 	+clr
 .header__left
@@ -154,7 +155,7 @@ body
 
 .footer
 	border-top: 1px solid #CECECE
-	min-width: 1000px 
+	min-width: 1000px
 	+clr
 	&__menu
 		margin: 0 auto
@@ -180,14 +181,16 @@ body
 		// +vcenter
 		float: left
 		width: 170px
-		margin: 25px 0 0 265px 
+		margin: 25px 0 0 265px
 		+max-screen(1200)
-			margin-left: 100px 
+			margin-left: 100px
 	&__right
 		float: right
 		color: #333
 		margin: 20px 0 0
 		width: 370px    ////////  kjshkdjkjk
+		+max-screen(1070)
+			margin-right: 30px
 		&_return
 			float: left
 			width: 49%
@@ -255,14 +258,14 @@ body
 	bottom: 0
 	right: 0
 	left: 0
-.overlay_black
 	background-color: rgba(0, 0, 0, .6)
 .popup
 	display: none
 	position: fixed
 	z-index: 2000
 	top: 100px
-	right: 30px
+	left: 50%
+	margin-left: -135px
 	width: 268px
 	height: 198px
 	background: #fff
@@ -271,8 +274,9 @@ body
 .small
 	width: 268px
 	height: 283px
-	top: 230px
-	left: 510px
+	top: 100px
+	left: 50%
+	margin-left: -134px
 
 .popup p
 	color: #4A4B4C
@@ -337,7 +341,8 @@ body
 	+fs(13)
 .middle
 	width: 960px
-	height: 700px
+	// height: 700px
+	height: auto
 	top: 15px
 	left: 50%
 	padding-bottom: 15px
@@ -346,25 +351,39 @@ body
 	-ms-transform: translate(-50%)
 	-o-transform: translate(-50%)
 	transform: translate(-50%)
-
+.cycle__faces
+	width: 930px
+	height: auto
+	margin: 125px auto 0
+	overflow: hidden
 .cycle__faces img
 	width: 930px
-	// height: 535px
-	-webkit-transform: translate(0, 125px)
-	-moz-transform: translate(0, 125px)
-	-ms-transform: translate(0, 125px)
-	-o-transform: translate(0, 125px)
-	transform: translate(0, 125px)
-	left: 15px!important
+	height: auto
 .center
 	position: absolute
 	top: 15px
 	left: 50%
 	margin-left: -340px
 	z-index: 130
-	img
+	a
+		position: relative
+		display: inline-block
 		height: 100px
-		
+		&:after
+			content: ""
+			cursor: pointer
+			-webkit-box-shadow: 0 0 80px 100px rgba(0, 0, 0, .7) inset
+			box-shadow: 0 0 80px 100px rgba(0, 0, 0, .7) inset
+			+coverdiv
+	img
+		position: relative
+		height: 100px
+	.cycle-pager-active
+		position: relative
+		&:after
+			content: none
+
+
 
 
 

@@ -8,6 +8,8 @@
 	margin: 0 auto
 	width: 85%
 	min-width: 950px
+	border-bottom: 2px solid $gold
+	text-align: center
 	+clr
 	&__item
 		position: relative
@@ -86,10 +88,6 @@
 	height: 540px
 	img
 		+coverdiv
-		// display: block
-		// width: 100%
-		// height: 540px
-		+gray
 .slider .nav
 	position: absolute
 	bottom: 40px
@@ -150,11 +148,11 @@
 		display: block
 		width: 100%
 		height: auto //400
-		+gray
 .stock__slider__content
 	position: absolute
 	bottom: 0
 	left: 0
+	min-height: 150px
 	line-height: 23px
 	color: #333
 	padding: 25px 20px 50px
@@ -200,7 +198,6 @@
 
 .must__know
 	position: relative
-	width: 96%
 	margin: 0 auto
 	border-bottom: 2px solid $gold
 	+clr
@@ -232,7 +229,6 @@
 
 .pazzle
 	margin: 58px auto 0px
-	width: 96%
 	text-align: center
 	+clr
 	p
@@ -245,7 +241,7 @@
 		padding-bottom: 36px
 		margin: 0 10px
 		+max-screen(1100)
-			width: 22% 
+			width: 22%
 		&:first-child
 			margin-left: 0
 		&:nth-child(2n)
@@ -280,7 +276,7 @@
 	padding: 80px 0 0
 	+clr
 .event
-	margin: 40px 0 80px
+	margin: 40px 0 80px 20px
 	+clr
 .event__wrap
 	position: relative
@@ -289,8 +285,8 @@
 	margin: 0 10px
 	overflow: hidden
 	+clr
-	+max-screen(1100)
-		width: 22% 
+	// +max-screen(1330)
+	// 	width: 22%
 	&:first-child
 		margin-left: 0
 	&:nth-child(4n)
@@ -346,6 +342,8 @@
 .name a
 	color: #333
 	+fs(20)
+	&:hover
+		color: $gold
 .spector
 	color: #333
 	+fs(14)
@@ -458,7 +456,7 @@
 			+arr(22, 40, #000, r)
 .services__definition
 	margin: 140px 40px 50px
-	+max-screen(1150)
+	+max-screen(1300)
 		margin-top: 40px
 
 
@@ -496,7 +494,7 @@
 		display: table-cell
 		word-break: break-all
 		width: 25%
-		background-color: #CECECE 
+		background-color: #CECECE
 		color: #333
 		padding: 32px 32px 60px
 		-webkit-box-sizing: content-box
@@ -510,7 +508,7 @@
 	display: block
 	margin: 0
 	padding: 0
-	width: 100%  
+	width: 100%
 	height: auto/*  :340 */
 
 
@@ -611,6 +609,9 @@
 		padding: 8px 5px 10px 17px
 		background-color: #333
 		margin: 0 20px 0 -17px
+		cursor: default
+		&:hover
+			color: #FFF
 .pages__item
 	margin-right: 25px
 .pages__prev
@@ -667,7 +668,7 @@
 		vertical-align: top
 		float: left
 		+max-screen(1400)
-			width: 275px 
+			width: 275px
 		// +max-screen(1350)
 		// 	display: table-cell
 		// 	float: left
@@ -693,7 +694,7 @@
 	-moz-box-sizing: content-box
 	box-sizing: content-box
 	+max-screen(1400)
-		width: 275px 
+		width: 275px
 		padding: 15px 15px 0px 10px
 	// +max-screen(1350)
 	// 	display: table-cell
@@ -740,7 +741,7 @@
 	// 	box-shadow: inset 0 0 10px rgba(255,255,255,0.5)
 .step__number
 	color: #e4e4e4
-	margin: 90px 0 0 25px 
+	margin: 90px 0 0 25px
 	+os_bold
 	+fs(120)
 .step__content
@@ -782,7 +783,7 @@
 /* --------------- Shagov.html ---------------- */
 
 .b_container
-	width: 1000px 
+	width: 1000px
 	margin: 70px auto 90px
 	+clr
 .story
@@ -793,7 +794,7 @@
 	margin: 0 15px 80px 30px
 	color: #333
 	+os_light
-	+fs(16) 
+	+fs(16)
 .pic1
 	width: 420px
 	height: auto
@@ -813,7 +814,7 @@
 .pic4
 	width: 125px
 	height: auto
-	margin: 20px 15px 15px 
+	margin: 20px 15px 15px
 	float: left
 	// http://lorempixel.com/output/cats-q-c-125-125-7.jpg
 .pic5
@@ -873,15 +874,15 @@
 	height: auto
 	float: left
 	//http://lorempixel.com/output/cats-q-c-200-200-9.jpg
-	
+
 	/* -----------  accordion ---- */
-	
+
 .q_container
-	max-width: 1155px 
+	max-width: 1155px
 	margin: 0 auto 125px
 	+clr
 	+max-screen(1150)
-		margin: 0 20px 125px 
+		margin: 0 20px 125px
 	p
 		color: #333
 		line-height: 22px
@@ -891,14 +892,14 @@
 // 			display: block
 // 	+clr
 .accordion__list
-	border-bottom: 1px solid #CECECE 
+	border-bottom: 1px solid #CECECE
 .accordion__link
 	display: inline-block
 	line-height: 60px
 	color: #333
 	+fs(24)
 	&:hover
-		color: $gold 
+		color: $gold
 .slide
 	display: none
 .certificate
@@ -909,7 +910,7 @@
 	display: block
 	float: left
 	margin: 28px
-	border: 3px solid #cecece 
+	border: 3px solid #cecece
 	&:last-child
 		margin-right: 0
 	&:first-child
@@ -934,17 +935,17 @@
 .contakt
 	width: 400px
 	float: left
-	color: #333 
+	color: #333
 	margin-left: 30px
 	+fs(18)
 	+clr
 	a
 		color: #333
-		line-height: 30px 
+		line-height: 30px
 .lettering
-	color: $gold 
+	color: $gold
 	line-height: 30px
-	margin: 20px 0 5px 
+	margin: 20px 0 5px
 	+os_light
 	+fs(18)
 .map
@@ -961,7 +962,7 @@
 	width: 100%
 	height: 150px
 	padding-left: 40px
-	background-color: #8C8C8C 
+	background-color: #8C8C8C
 	color: #fff
 	+clr
 	p
@@ -991,6 +992,6 @@
 		left: 80px
 	p
 		margin-top: 130px
-		color: #FFF 
+		color: #FFF
 		+os_light
 		+fs(17)
