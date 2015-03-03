@@ -227,9 +227,7 @@
 	// margin-top: 60px //02.03
 	+os_light
 	+fs(30)
-.out
-	.main__title
-		margin-top: 60px
+
 /* ------------ pazle ------------ */
 
 .pazzle
@@ -346,6 +344,7 @@
 .name,
 .name a
 	color: #333
+	margin-top: 20px //02.03
 	+fs(20)
 	&:hover
 		color: $gold
@@ -432,6 +431,8 @@
 		width: 36%
 		float: left
 		height: 495px
+		+max-screen(1200)
+			height: 388px
 		&_wrap
 			padding: 155px 0 0 40px
 			+box
@@ -483,7 +484,8 @@
 	+max-screen(1300)
 		margin-top: -250px
 	+max-screen(1200)
-		margin: -250px 15px 10px
+		// margin: -250px 15px 10px
+		margin: -193px 15px 10px
 	+clr
 
 .baner
@@ -617,9 +619,9 @@
 	.is-active
 		position: relative
 		color: #fff
-		padding: 8px 5px 10px 17px
+		padding: 8px 10px 10px 13px
 		background-color: #333
-		margin: 0 20px 0 -17px
+		margin: 0 15px 0 -17px
 		cursor: default
 		&:hover
 			color: #FFF
@@ -630,7 +632,7 @@
 
 .event__label
 	color: #686868
-	margin: 10px 0 15px
+	margin: 10px 0 15px!important
 	+fs(16)
 
 
@@ -666,10 +668,15 @@
 		width: 590px
 		margin-right: 15px
 	+max-screen(1350)
-		width: 500px
+		width: 565px
 		margin: 30px auto
+	+max-screen(1300)
+		width: 540px
+	+max-screen(1220)
+		width: 500px
 	&:nth-child(2n)
 		margin-right: 0
+		float: right
 		+max-screen(1350)
 			margin: 30px auto
 	&__img
@@ -681,6 +688,10 @@
 		+max-screen(1400)
 			width: 275px
 		+max-screen(1350)
+			width: 265px
+		+max-screen(1300)
+			width: 230px
+		+max-screen(1220)
 			width: 200px
 		img
 			width: 100%
@@ -705,20 +716,35 @@
 	+max-screen(1400)
 		width: 275px
 		padding: 15px 15px 0px 10px
-	+max-screen(1200)
+	+max-screen(1350)
+		height: 250px
+	+max-screen(1300)
+		height: auto
+		min-height: 215px
+		p
+			+fs(14)
+	+max-screen(1220)
 		padding: 5px 5px 0px 5px
+		height: auto
+		min-height: 195px
 	// +max-screen(1350)
 	// 	display: table-cell
 	// 	float: left
 	// 	width: 395px
 	// 	height: 365px
 	.name
-		a
-
+		+max-screen(1220)
+			line-height: 15px
 			+fs(15)
 	.date
 		margin: 10px 0 20px
-
+		+max-screen(1300)
+			margin: 7px 0 15px
+		+max-screen(1220)
+			margin: 5px 0 10px
+	p
+		+max-screen(1220)
+			+fs(14)
 /* ---------------step.html -----------------   */
 
 .steps
@@ -897,11 +923,10 @@
 	p
 		color: #333
 		line-height: 22px
-// .accordion
-// 	.active
-// 		+ .slide
-// 			display: block
-// 	+clr
+.accordion
+	.is-active
+		display: block
+	+clr
 .accordion__list
 	border-bottom: 1px solid #CECECE
 .accordion__link
@@ -913,6 +938,7 @@
 		color: $gold
 .slide
 	display: none
+	padding-bottom: 20px
 .certificate
 	&:last-child
 		margin-bottom: 24px
