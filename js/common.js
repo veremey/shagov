@@ -24,6 +24,11 @@ $(document).ready(function(){
 				overlay.show();
 				return false;
 		});
+		$(".js-photo2").click(function(){
+				$(".js-popup-photo2").show();
+				overlay.show();
+				return false;
+		});
 
 
 $(".accordion__link").click(function (){
