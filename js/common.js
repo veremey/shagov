@@ -60,6 +60,14 @@ $(".accordion__link").click(function (){
     tab();
 
 
+    $(".fancybox").fancybox();
+		$('.fancybox-media').fancybox({
+			openEffect  : 'none',
+			closeEffect : 'none',
+			helpers : {
+				media : {}
+			}
+		});
 
 });
 

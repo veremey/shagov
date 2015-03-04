@@ -6,7 +6,7 @@
 	<meta name="viewport" content="initial-scale=1, user-scalable=no">
 	<link rel="icon" type="image/png" href="img/favicon.png">
 	<link rel="stylesheet" media="all" href="css/screen.css" >
-
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,700,300,400&subset=cyrillic' rel='stylesheet' type='text/css'>
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
 <body>
@@ -32,7 +32,8 @@
 </header>
 <!-- END header-->
 <div class="main">
-	<ul class="menu">
+	<div class="out">
+		<ul class="menu">
 		<li class="menu__item"><a href="#" class="menu__link">Почему мы</a></li>
 		<li class="menu__item"><a href="#" class="menu__link">Услуги</a></li>
 		<li class="menu__item"><a href="#" class="menu__link">Пошагово</a></li>
@@ -47,9 +48,8 @@
 			</ul>
 		</li>
 		<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
-	</ul>
-	<div class="out">
-		<h2 class="main__title ht65">Шагов Евгений Анатольевич</h2>
+		</ul>
+		<h2 class="main__title ht50">Шагов Евгений Анатольевич</h2>
 	</div>
 	<div class="b_container">
 		<div class="story">
@@ -95,16 +95,16 @@
 							<img src="img/icons/sert.png" alt="">
 						</a>
 						<a href="#" class="certificate__link js-photo">
-							<img src="img/icons/sert.png" alt="">
+							<img src="img/icons/sert1.png" alt="">
 						</a>
 						<a href="#" class="certificate__link js-photo">
 							<img src="img/icons/sert.png" alt="">
 						</a>
 						<a href="#" class="certificate__link js-photo">
-							<img src="img/icons/sert.png" alt="">
+							<img src="img/icons/sert2.png" alt="">
 						</a>
 						<a href="#" class="certificate__link js-photo">
-							<img src="img/icons/sert.png" alt="">
+							<img src="img/icons/sert1.png" alt="">
 						</a>
 					</div>
 					<div class="certificate">
@@ -219,8 +219,10 @@
 <div class="popup middle js-popup js-popup-photo" > <!--   js-popup-photo1 -->
 	<div id=adv-custom-pager class="center external"></div>
 	<div class="cycle-slideshow cycle__faces"
-    data-cycle-fx=scrollHorz
-    data-cycle-timeout=0
+    data-cycle-fx=carousel
+    data-cycle-timeout=2000
+    data-cycle-carousel-visible=2
+    data-cycle-carousel-fluid=true
     data-cycle-pager="#adv-custom-pager"
     data-cycle-pager-template="<a href='#'><img src='{{src}}' width=160 height=100></a>"
     >
