@@ -138,9 +138,12 @@ body
 	+clr
 .header__right-return
 	position: relative
+	float: right
+	margin-top: 10px
 	+os_light
 	+fs(13)
 	color: $gold
+	border-bottom: 1px solid $gold
 	&:hover
 		color: #222
 		border-bottom: 1px solid #222
@@ -199,6 +202,7 @@ body
 			& a
 				display: inline-block
 				color: $gold
+				border-bottom: 1px solid $gold
 				+os_light
 				+fs(13)
 				&:hover
@@ -212,6 +216,7 @@ body
 			& a
 				display: inline-block
 				color: $gold
+				border-bottom: 1px solid $gold
 				+os_light
 				+fs(13)
 				&:hover
@@ -219,6 +224,7 @@ body
 					border-bottom: 1px solid #222
 			[href*="0"]
 				color: #222
+				border-bottom: 1px solid transparent
 				&:hover
 					border-bottom: 1px solid transparent
 	&__content
@@ -334,10 +340,11 @@ body
 		color: $gold
 		border-bottom: 1px solid $gold
 .btn
-	width: 80px
 	height: 30px
 	float: right
+	padding: 0 20px
 	margin-right: 20px
+	margin-top: -3px
 	text-transform: uppercase
 	+fs(13)
 .middle

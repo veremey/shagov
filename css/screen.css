@@ -64,7 +64,7 @@ body { font: 1.6rem/1.25 "Open Sans", Arial, sans-serif; }
 .header__right-tel_link { position: relative; display: inline-block; text-align: right; line-height: 25px; color: #222; *zoom: 1; }
 .header__right-tel_link:after { content: " "; display: table; clear: both; }
 
-.header__right-return { position: relative; font-family: "Open Sans", sans-serif; font-weight: 300; font-style: normal; font-size: 13px; font-size: 1.3rem; color: #95760e; }
+.header__right-return { position: relative; float: right; margin-top: 10px; font-family: "Open Sans", sans-serif; font-weight: 300; font-style: normal; font-size: 13px; font-size: 1.3rem; color: #95760e; border-bottom: 1px solid #95760e; }
 .header__right-return:hover { color: #222; border-bottom: 1px solid #222; }
 
 /*----- FOOTER------- */
@@ -81,12 +81,12 @@ body { font: 1.6rem/1.25 "Open Sans", Arial, sans-serif; }
 .footer__right { float: right; color: #333; margin: 20px 0 0; width: 370px; }
 @media screen and (max-width: 1070px) { .footer__right { margin-right: 30px; } }
 .footer__right_return { float: left; width: 49%; text-align: left; margin-right: 45px; }
-.footer__right_return a { display: inline-block; color: #95760e; font-family: "Open Sans", sans-serif; font-weight: 300; font-style: normal; font-size: 13px; font-size: 1.3rem; }
+.footer__right_return a { display: inline-block; color: #95760e; border-bottom: 1px solid #95760e; font-family: "Open Sans", sans-serif; font-weight: 300; font-style: normal; font-size: 13px; font-size: 1.3rem; }
 .footer__right_return a:hover { color: #222; border-bottom: 1px solid #222; }
 .footer__right_contakt { float: right; width: 49%; text-align: left; margin-right: -45px; }
-.footer__right_contakt a { display: inline-block; color: #95760e; font-family: "Open Sans", sans-serif; font-weight: 300; font-style: normal; font-size: 13px; font-size: 1.3rem; }
+.footer__right_contakt a { display: inline-block; color: #95760e; border-bottom: 1px solid #95760e; font-family: "Open Sans", sans-serif; font-weight: 300; font-style: normal; font-size: 13px; font-size: 1.3rem; }
 .footer__right_contakt a:hover { color: #222; border-bottom: 1px solid #222; }
-.footer__right_contakt [href*="0"] { color: #222; }
+.footer__right_contakt [href*="0"] { color: #222; border-bottom: 1px solid transparent; }
 .footer__right_contakt [href*="0"]:hover { border-bottom: 1px solid transparent; }
 .footer__content { *zoom: 1; }
 .footer__content p { text-align: left; color: #999; font-size: 12px; font-size: 1.2rem; }
@@ -133,7 +133,7 @@ body { font: 1.6rem/1.25 "Open Sans", Arial, sans-serif; }
 .cansel { margin-left: 24px; margin-top: 30px; color: #222; border-bottom: 1px solid #222; font-size: 13px; font-size: 1.3rem; }
 .cansel:hover { color: #95760e; border-bottom: 1px solid #95760e; }
 
-.btn { width: 80px; height: 30px; float: right; margin-right: 20px; text-transform: uppercase; font-size: 13px; font-size: 1.3rem; }
+.btn { height: 30px; float: right; padding: 0 20px; margin-right: 20px; margin-top: -3px; text-transform: uppercase; font-size: 13px; font-size: 1.3rem; }
 
 .middle { width: 960px; height: auto; top: 15px; left: 50%; padding-bottom: 15px; -webkit-transform: translate(-50%); -moz-transform: translate(-50%); -ms-transform: translate(-50%); -o-transform: translate(-50%); transform: translate(-50%); }
 
@@ -194,7 +194,7 @@ body { font: 1.6rem/1.25 "Open Sans", Arial, sans-serif; }
 .stock__slider-item { position: static; bottom: 0; left: 0; right: 0; z-index: 100; opacity: 1; visibility: hidden; display: block; }
 .stock__slider-item img { display: block; width: 100%; height: auto; }
 
-.stock__slider__content { position: absolute; bottom: 0; left: 0; min-height: 150px; line-height: 23px; color: #333; padding: 25px 20px 50px; font-size: 16px; font-size: 1.6rem; background-color: #dfdfdf; }
+.stock__slider__content { position: absolute; bottom: 0; left: 0; min-height: 150px; line-height: 23px; color: #333; padding: 25px 20px 50px; font-family: "Open Sans", sans-serif; font-weight: 300; font-style: normal; font-size: 16px; font-size: 1.6rem; background-color: #dfdfdf; }
 
 .stocker { position: absolute; bottom: 12px; height: 20px; left: 8px; z-index: 99999; *zoom: 1; }
 .stocker button { display: inline-block; width: 12px; height: 12px; border-radius: 50%; background-color: #fff; opacity: 0.8; margin-left: 15px; cursor: pointer; }
@@ -244,7 +244,7 @@ body { font: 1.6rem/1.25 "Open Sans", Arial, sans-serif; }
 .event__title a { color: #95760e; font-family: "Open Sans", sans-serif; font-weight: 300; font-style: normal; font-size: 22px; font-size: 2.2rem; }
 .event__title a:hover { color: #222; border-bottom: 1px solid #222; }
 
-.date { color: #333; font-family: "Open Sans", sans-serif; font-weight: 300; font-style: normal; font-size: 14px; font-size: 1.4rem; }
+.date { color: #333; margin-top: 5px; font-family: "Open Sans", sans-serif; font-weight: 300; font-style: normal; font-size: 14px; font-size: 1.4rem; }
 
 /* --------- likes ---------- */
 .likes { position: relative; text-align: center; margin: 0px auto; padding: 65px 0 50px; *zoom: 1; }
@@ -260,6 +260,8 @@ body { font: 1.6rem/1.25 "Open Sans", Arial, sans-serif; }
 
 .name, .name a { color: #333; margin-top: 20px; font-size: 20px; font-size: 2rem; }
 .name:hover, .name a:hover { color: #95760e; }
+
+.name a:hover { border-bottom: 1px solid #95760e; }
 
 .spector { color: #333; font-size: 14px; font-size: 1.4rem; }
 
