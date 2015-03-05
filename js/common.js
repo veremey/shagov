@@ -19,6 +19,11 @@ $(document).ready(function(){
 				overlay.show();
 				return false;
 		});
+		$(".js-return-link_futer").click(function(){
+				$(".js-popup-return_futer").show();
+				overlay.show();
+				return false;
+		});
 		$(".js-photo").click(function(){
 				$(".js-popup-photo").show();
 				overlay.show();

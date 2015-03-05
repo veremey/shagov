@@ -415,7 +415,7 @@
 /* ---------- services.html  -------------- */
 
 .services
-	margin: 40px 0 165px
+	margin: 40px 0 90px
 	+clr
 	&__container
 		display: table-cell
@@ -468,7 +468,7 @@
 	table-layout: fixed
 	position: relative
 	float: left
-	width: 80%
+	width: 90%
 	background-color: #FFF
 	margin-bottom: -4px
 	+clr
@@ -481,6 +481,7 @@
 	float: left
 	width: 64%
 	overflow: hidden
+	margin-bottom: -4px
 	img
 		width: 100%
 		height: auto
@@ -510,11 +511,11 @@
 	background-color: #000
 	float: right
 	color: #EBEBEB
-	border-radius: 0 10px 0 10px
+	margin-top: 4px
+	// border-radius: 0 10px 0 10px
 .services__img_right
 	float: right
 	position: relative
-	margin-bottom: -4px
 	&:before
 		content: ""
 		position: absolute
@@ -543,19 +544,12 @@
 	+max-screen(1240)
 		padding: 30px 5px 20px
 
-
-
-
-
-
 .services__definition
 	margin: 140px 40px 16px
 	+max-screen(1350)
 		margin-top: 40px
 	+max-screen(1200)
 		margin: 10px 15px 0px
-
-
 
 /*  ------------------  butyfication.html -------------- */
 
@@ -707,6 +701,7 @@
 .period
 	line-height: 20px
 	color: #333
+	padding-left: 20px
 	+fs(15)
 	a
 		line-height: 25px
@@ -756,7 +751,9 @@
 
 .gallery
 	background-color: #FFF
-	padding: 28px 0 50px
+	padding: 28px 0 30px
+	.wrapper
+		margin-bottom: 0
 	+clr
 .gallery__img
 	display: inline-block // 04,03
@@ -906,11 +903,11 @@
 	// 	box-shadow: inset 0 0 10px rgba(255,255,255,0.5)
 .step__number
 	color: #e4e4e4
-	margin: 90px 0 0 25px
+	margin: 94px 0 0 23px
 	+os_bold
 	+fs(120)
 .step__content
-	margin-left: 25px
+	margin: 15px 0 0 25px
 	color: #e4e4e4
 	+fs(20)
 .steper
@@ -943,7 +940,7 @@
 	float: left
 .step__container,
 .step__container-4
-	padding: 45px 60px
+	padding: 42px 30px 42px 60px
 	float: left
 	width: 60%
 	+os_light
@@ -964,7 +961,7 @@
 .step__container-3
 	padding: 20px 30px  //02.03 !!!
 	line-height: 16px
-	// padding: 45px 60px
+	// padding: 42px 60px
 	float: left
 	width: 65%
 	+os_light
@@ -982,7 +979,7 @@
 	+clr
 .lb
 	background-color: #FFF
-	margin: 20px 0 90px 0px
+	margin: 30px 0 30px 0px
 
 /* --------------- Shagov.html ---------------- */
 
@@ -990,7 +987,7 @@
 	width: 1000px
 	margin: 70px auto 90px
 	+clr
-.white_container
+.white__container
 	width: 100%
 	min-width: 1000px
 	padding: 30px 0
@@ -998,6 +995,8 @@
 	background-color: #FFF
 	.out
 		width: 1000px
+	.r_container
+		margin: 0 auto
 	+clr
 .r_container
 	width: 1000px
@@ -1107,7 +1106,7 @@
 		color: #333
 		line-height: 22px
 .accordion
-	margin-top: -25px
+	margin-top: 30px
 	.is-active
 		display: block
 	+clr
@@ -1144,7 +1143,13 @@
 		width: 100%
 		vertical-align: top
 .caption
-	margin: -55px 10px 60px
+	width: 1000px
+	margin: 14px auto -10px
+	-webkit-transform: translate(60px, 0)
+	-moz-transform: translate(60px, 0)
+	-ms-transform: translate(60px, 0)
+	-o-transform: translate(60px, 0)
+	transform: translate(60px, 0)
 	+max-screen(1050)
 		margin-left: 20px
 .caption .date
