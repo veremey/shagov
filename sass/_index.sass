@@ -46,6 +46,7 @@
 	width: 100%
 	top: 60px
 	right: 0
+	text-align: left
 	padding: 0 18px 20px 20px
 	background-color: #FFF
 	z-index: 9900
@@ -124,11 +125,12 @@
 	width: 23%
 	padding-top: 30px
 	float: right
+	overflow: hidden
 	.main__title
 		text-align: left
 .container__title
 	color: $gold
-	+os_reg
+	+os_light
 	+fs(30)
 
 .stock .cycle-slideshow
@@ -149,7 +151,7 @@
 	border-radius: 0 10px 0 0
 	img
 		display: block
-		width: 279px
+		// width: 279px
 		height: auto //400
 .stock__slider__content
 	position: absolute
@@ -353,6 +355,7 @@
 .name a
 	color: #333
 	margin-top: 5px //02.03
+	+os_reg
 	+fs(20)
 	&:hover
 		color: $gold
@@ -368,7 +371,7 @@
 	color: #333
 	line-height: 25px
 	background-color: #FAFAFA
-	+r_reg
+	+os_light
 	+fs(18)
 	&:before
 		content: ""
@@ -450,6 +453,8 @@
 		+fs(25)
 		&:hover
 			border-bottom: none
+		+max-screen(1350)
+			+fs(24)
 	&__right
 		float: right
 		&:after
@@ -509,6 +514,7 @@
 .services__img_right
 	float: right
 	position: relative
+	margin-bottom: -4px
 	&:before
 		content: ""
 		position: absolute
@@ -517,10 +523,12 @@
 		+arr(22, 40, #000, r)
 
 .services__black
-	width: 32%
+	width: 36%
 	position: relative
 	float: left
 	background-color: #000
+	.services__wrap
+		margin: 25px 0 0px 35px
 
 
 .services__black_wrap
@@ -556,6 +564,9 @@
 	table-layout: fixed
 	width: 100%
 	background-color: #FFF
+	border-radius: 10px 0 0 10px
+	overflow: hidden
+	margin-bottom: -4px
 	+clr
 // .services__center
 	// height: 250px
@@ -573,7 +584,7 @@
 //	+clr
 
 .baner
-	margin: 40px 0 50px
+	margin: 40px 0 35px
 	+clr
 	p
 		margin-top: 12px
@@ -581,11 +592,12 @@
 	display: inline-block
 	color: #222
 	margin-top: 20px
-	border-bottom: 1px solid transparent
+	border-bottom: 1px solid #222
 	+os_light
 	+fs(18)
 	&:hover
-		border-bottom: 1px solid #222
+		color: $gold
+		border-bottom: 1px solid transparent
 
 .lp
 	margin: 0 10px 60px
@@ -678,7 +690,7 @@
 	line-height: 22px
 	+fs(16)
 .doctor
-	margin: 10px 0 90px
+	margin: 20px 0 90px
 	padding: 34px 0 0
 	border-top: 1px solid #CECECE
 
@@ -713,7 +725,6 @@
 .pages__wrap
 	position: absolute
 	left: 50%
-	width: 500px
 	+translate(-50%,0)
 	+clr
 	a
@@ -750,7 +761,7 @@
 .gallery__img
 	display: inline-block // 04,03
 	width: 12%
-	margin: 0 6px 3px -5px
+	margin: 0 6px 2px -5px
 	border: none
 	outline: none
 	padding: 0
@@ -808,6 +819,7 @@
 		img
 			width: 100%
 			height: auto
+			vertical-align: top
 		&:after
 			content: ""
 			border-radius: 50%
@@ -978,6 +990,15 @@
 	width: 1000px
 	margin: 70px auto 90px
 	+clr
+.white_container
+	width: 100%
+	min-width: 1000px
+	padding: 30px 0
+	margin-top: 40px
+	background-color: #FFF
+	.out
+		width: 1000px
+	+clr
 .r_container
 	width: 1000px
 	margin: 70px auto 60px
@@ -1022,7 +1043,7 @@
 .pic5
 	width: 275px
 	height: auto
-	margin: 15px 0
+	margin: 20px 0
 	float: left
 	//  src="img/icons/w1.png"
 .pic6
@@ -1030,6 +1051,7 @@
 	height: auto
 	margin-top: -285px
 	float: left
+	margin-left: 5px
 	//  src="img/icons/w1.png"
 .pic7
 	width: 125px
@@ -1095,6 +1117,7 @@
 	display: block
 	line-height: 74px
 	color: #333
+	cursor: pointer
 	+fs(24)
 	&:hover
 		color: $gold
