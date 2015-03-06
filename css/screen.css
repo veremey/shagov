@@ -234,7 +234,7 @@ html, body { min-height: 100%; }
 .white { background-color: #FFF; padding: 70px 0 0; *zoom: 1; }
 .white:after { content: " "; display: table; clear: both; }
 
-.event { margin: 40px 0 80px 20px; *zoom: 1; }
+.event { padding: 40px 0 50px 20px; *zoom: 1; }
 .event:after { content: " "; display: table; clear: both; }
 
 .event__wrap { position: relative; display: inline-block; vertical-align: top; width: 23%; margin: 0 10px; overflow: hidden; *zoom: 1; }
@@ -250,7 +250,7 @@ html, body { min-height: 100%; }
 .date { color: #333; margin-top: 5px; font-family: "Open Sans", sans-serif; font-weight: 300; font-style: normal; font-size: 14px; font-size: 1.4rem; }
 
 /* --------- likes ---------- */
-.likes { position: relative; text-align: center; margin: 0px auto; padding: 55px 0 50px; font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; *zoom: 1; }
+.likes { position: relative; text-align: center; margin: 0px auto; padding: 85px 0 50px; font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; *zoom: 1; }
 .likes:after { content: " "; display: table; clear: both; }
 
 .likes .cycle-slideshow { margin-top: 25px; overflow: hidden; }
@@ -595,6 +595,8 @@ html, body { min-height: 100%; }
 
 .h60 { height: 60px; clear: both; }
 
+.h50 { height: 50px; clear: both; }
+
 .black__bg { background-color: #000 !important; }
 .black__bg a { color: #ebebeb !important; border-bottom-color: #EBEBEB !important; }
 .black__bg .therapy__title { color: #FFF !important; }
@@ -619,7 +621,9 @@ html, body { min-height: 100%; }
 
 .h15 { margin-top: 15px; }
 
-.mb35 { margin-bottom: 35px; margin-top: 10px; }
+.m35 { margin-top: 35px; }
+
+.mb35 { margin-bottom: 35px; margin-top: 10px; padding: 0; }
 
 .hb { margin-bottom: -45px; }
 .hb .pages__wrap { -webkit-transform: translate(-50%, -110%); -moz-transform: translate(-50%, -110%); -ms-transform: translate(-50%, -110%); -o-transform: translate(-50%, -110%); transform: translate(-50%, -110%); }
