@@ -70,7 +70,7 @@ html, body { min-height: 100%; }
 .header__right-return:hover { color: #222; border-bottom: 1px solid #222; }
 
 /*----- FOOTER------- */
-.footer { border-top: 1px solid #CECECE; min-width: 1000px; *zoom: 1; }
+.footer { border-top: 1px solid #CECECE; min-width: 1000px; background-color: #fff; *zoom: 1; }
 .footer:after { content: " "; display: table; clear: both; }
 .footer__menu { margin: 0 auto; height: 60px; border-bottom: 1px solid #95760e; min-width: 950px; *zoom: 1; }
 .footer__menu:after { content: " "; display: table; clear: both; }
@@ -250,7 +250,7 @@ html, body { min-height: 100%; }
 .date { color: #333; margin-top: 5px; font-family: "Open Sans", sans-serif; font-weight: 300; font-style: normal; font-size: 14px; font-size: 1.4rem; }
 
 /* --------- likes ---------- */
-.likes { position: relative; text-align: center; margin: 0px auto; padding: 85px 0 50px; font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; *zoom: 1; }
+.likes { position: relative; text-align: center; margin: 0px auto; padding: 50px 0 85px; font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; *zoom: 1; }
 .likes:after { content: " "; display: table; clear: both; }
 
 .likes .cycle-slideshow { margin-top: 25px; overflow: hidden; }
@@ -272,7 +272,7 @@ html, body { min-height: 100%; }
 .likes__slide_content:before { content: ""; position: absolute; display: block; top: -17px; left: -50px; background: url('../img/icons-s1b6146183f.png') 0 -7325px no-repeat; width: 42px; height: 40px; }
 .likes__slide_content:after { content: ""; position: absolute; display: block; bottom: -17px; right: -50px; background: url('../img/icons-s1b6146183f.png') 0 -7275px no-repeat; width: 42px; height: 40px; }
 
-.likes_nav { position: absolute; bottom: 25px; left: 50%; right: 50%; width: 300px; margin-left: -150px; z-index: 999; *zoom: 1; }
+.likes_nav { position: absolute; bottom: 60px; left: 50%; right: 50%; width: 300px; margin-left: -150px; z-index: 999; *zoom: 1; }
 .likes_nav button { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background-color: #cdcdcd; margin-left: 20px; }
 .likes_nav button:hover { -ms-transform: scale(1.2); -webkit-transform: scale(1.2); transform: scale(1.2); }
 .likes_nav .is-active { width: 11px; height: 11px; background-color: #FAFAFA; border: 1px solid #95760e; }
