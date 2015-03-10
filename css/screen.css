@@ -234,7 +234,7 @@ html, body { min-height: 100%; }
 .white { background-color: #FFF; padding: 70px 0 0; *zoom: 1; }
 .white:after { content: " "; display: table; clear: both; }
 
-.event { padding: 40px 0 50px 20px; *zoom: 1; }
+.event { padding: 35px 0 55px 20px; *zoom: 1; }
 .event:after { content: " "; display: table; clear: both; }
 
 .event__wrap { position: relative; display: inline-block; vertical-align: top; width: 23%; margin: 0 10px; overflow: hidden; *zoom: 1; }
@@ -397,7 +397,7 @@ html, body { min-height: 100%; }
 .event__label { color: #686868; margin: 10px 0 15px !important; font-size: 16px; font-size: 1.6rem; }
 
 /*  -------------------------------media.html --------------------- */
-.gallery { background-color: #FFF; padding: 28px 0 30px; *zoom: 1; }
+.gallery { background-color: #FFF; padding: 35px 0 30px; *zoom: 1; }
 .gallery .wrapper { margin-bottom: 0; }
 .gallery:after { content: " "; display: table; clear: both; }
 
@@ -597,6 +597,8 @@ html, body { min-height: 100%; }
 
 .h50 { height: 50px; clear: both; }
 
+.h40 { height: 40px; clear: both; }
+
 .black__bg { background-color: #000 !important; }
 .black__bg a { color: #ebebeb !important; border-bottom-color: #EBEBEB !important; }
 .black__bg .therapy__title { color: #FFF !important; }
@@ -646,3 +648,7 @@ html, body { min-height: 100%; }
 .header__enter { display: none; position: absolute; top: 103px; left: 87%; }
 
 .footer__return { top: 157px; left: 43%; }
+
+.mb-25 { margin-bottom: 25px; }
+
+.pb50 { padding-bottom: 50px; }
