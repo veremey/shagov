@@ -7,6 +7,7 @@ $(document).ready(function(){
 		$(".cansel").click(function(){
 				$(this).parents(".js-popup").hide();
 				overlay.hide();
+				return false;
 		});
 		overlay.click(function(){
 				$(this).hide();
