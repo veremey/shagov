@@ -90,8 +90,8 @@
 		+coverdiv
 .slider .nav
 	position: absolute
-	bottom: 40px
-	left: -2px
+	bottom: 8px
+	left: 0px
 	z-index: 999
 	button
 		width: 12px
@@ -99,13 +99,14 @@
 		border-radius: 50%
 		background-color: #fff
 		opacity: 0.8
-		margin-left: 18px
+		margin-left: 15px
 		&:hover
 			+scale(1.2)
 	.is-active
-		width: 12px
-		height: 12px
-		background-color: #949494
+		width: 14px
+		height: 14px
+		background-color: transparent
+		border: 1px solid $gold
 	+clr
 .big-slider__content
 	position: absolute
@@ -123,7 +124,7 @@
 	position: relative
 	height: 510px
 	width: 23%
-	padding-top: 30px
+	padding-top: 25px
 	float: right
 	overflow: hidden
 	.main__title
@@ -167,7 +168,7 @@
 
 .stocker
 	position: absolute
-	bottom: 12px
+	bottom: 8px
 	height: 20px
 	left: 8px
 	z-index: 99999
@@ -186,7 +187,7 @@
 		width: 14px
 		height: 14px
 		border: 1px solid $gold
-		background-color: #DFDFDF
+		background-color: transparent
 		+scale(1.2)
 	.pager
 		width: 10px
@@ -202,6 +203,9 @@
 	margin-bottom: 15px //02.03
 	+os_reg
 	+fs(25)
+	&:hover
+		color: #000
+		border-bottom: 1px solid #000
 /*-----------  must know  ------*/
 
 .must__know
@@ -211,7 +215,7 @@
 	+clr
 	&-col
 		width: 47%
-		margin: 35px 10px 40px 15px
+		margin: 35px 10px 55px 15px
 		float: left
 		line-height: 20px
 		color: #333
@@ -242,7 +246,7 @@
 	text-align: center
 	+clr
 	p
-		margin-top: 18px
+		margin-top: 8px
 	&__wrap
 		position: relative
 		display: inline-block
@@ -275,7 +279,7 @@
 			+arr(24, 15, #dfdfdf, t)
 	&__container
 		position: relative
-		padding: 30px 37px
+		padding: 20px
 		background-color: #DFDFDF
 		text-align: left
 		color: #222
