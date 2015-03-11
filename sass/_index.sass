@@ -84,19 +84,16 @@
 	height: 540px
 
 .big-slider__img
-	position: relative
-	width: 100%  /* w: auto */
+	position: absolute
+	width: 2000px
+	left: 50%
+	margin-left: -1000px
 	max-height: 540px
+	text-align: center
 	height: 540px
 	img
-		// width: 100%
-		// max-width: 100%
-		display: block
-		height: 540px
-		text-align: center
-		// +coverdiv
-		+max-screen(1370)
-			margin-left: -100px
+		height: 100%
+		width: auto
 .slider .nav
 	position: absolute
 	bottom: 8px
@@ -254,12 +251,14 @@
 .pazzle
 	margin: 58px auto 0px
 	text-align: center
+	position: relative
 	+clr
 	p
 		margin-top: 8px
 	&__wrap
 		position: relative
 		display: inline-block
+		overflow: hidden
 		vertical-align: top
 		width: 23%
 		padding-bottom: 36px
@@ -274,19 +273,21 @@
 			margin-right: 0
 	&__img
 		position: relative
-		border-radius: 0 10px 0 0
-		height: auto /* 285*/
-		width: 100%
-		vertical-align: bottom
-		overflow: hidden
+		width: 600px
+		left: 50%
+		margin-left: -300px
+		text-align: center
+		height: 400px
+		// position: relative
+		// border-radius: 0 10px 0 0
+		// height: auto
+		// width: 100%
+		// vertical-align: bottom
+		// overflow: hidden
 		img
-			vertical-align: bottom
-		&:after
-			content: ""
-			position: absolute
-			bottom: -1px
-			right: 15px
-			+arr(24, 15, #dfdfdf, t)
+			height: 100%
+			width: auto
+			// vertical-align: bottom
 	&__container
 		position: relative
 		padding: 20px
@@ -295,6 +296,12 @@
 		color: #222
 		+os_light
 		+fs(16)// ввести меди запросы на уменьшение шрифта
+		&:after
+			content: ""
+			position: absolute
+			top: -15px
+			right: 15px
+			+arr(24, 15, #dfdfdf, t)
 .white
 	background-color: #FFF
 	padding: 70px 0 0
@@ -320,6 +327,8 @@
 	p
 		margin-top: 13px
 		color: #333
+		+os_light
+		+fs(15)
 .event__title
 	margin-bottom: 5px
 	a

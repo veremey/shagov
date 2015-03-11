@@ -4,9 +4,14 @@ $(document).ready(function(){
 				$(this).parents(".js-popup").hide();
 				overlay.hide();
 		});
+		$(".cansel").click(function(){
+				$(this).parents(".js-popup").hide();
+				overlay.hide();
+		});
 		overlay.click(function(){
 				$(this).hide();
 				$(".js-popup").hide();
+
 		});
 
 		$(".js-question").click(function(){
