@@ -25,6 +25,11 @@ $(document).ready(function(){
 				overlay.show();
 				return false;
 		});
+		$(".js-return-call").click(function(){
+				$(".js-popup-return-call").show();
+				overlay.show();
+				return false;
+		});
 		$(".js-return-link_futer").click(function(){
 				$(".js-popup-return_futer").show();
 				overlay.show();
