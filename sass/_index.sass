@@ -172,9 +172,11 @@
 	min-width: 240px
 	color: #333
 	padding: 25px 20px 50px
+	background-color: #dfdfdf
 	+os_light
 	+fs(16)
-	background-color: #dfdfdf
+	p
+		margin-top: 10px
 .stocker
 	position: absolute
 	bottom: 8px
@@ -554,6 +556,7 @@
 		color: #EBEBEB
 		border-bottom: 1px solid #EBEBEB
 		&:hover
+			color: $gold
 			border-bottom: none
 	+max-screen(1285)
 		padding-top: 70px
@@ -606,8 +609,7 @@
 		padding-top: 30px
 	&:last-child
 		padding-bottom: 30px
-	&__item,
-	&__pic
+	&__item
 		display: table-cell
 		word-break: break-all
 		width: 25%
@@ -617,12 +619,24 @@
 		-webkit-box-sizing: content-box
 		-moz-box-sizing: content-box
 		box-sizing: content-box
+		// white-space: pre; /* CSS 2.0 */
+		// white-space: pre-wrap; /* CSS 2.1 */
+		// white-space: pre-line; /* CSS 3.0 */
+		// white-space: -pre-wrap; /* Opera 4-6 */
+		// white-space: -o-pre-wrap; /* Opera 7 */
+		// white-space: -moz-pre-wrap; /* Mozilla */
+		// white-space: -hp-pre-wrap; /* HP Printers */
+		// word-wrap: break-word; /* IE 5+ */
 		p,
 		ul
 			margin-top: 8px
 			+os_light
 			+fs(15)
 	&__pic
+		display: table-cell
+		width: 25%
+		background-color: #CECECE
+		color: #333
 		padding: 0
 		vertical-align: top
 	+clr
@@ -1063,20 +1077,19 @@
 .pic6
 	width: 275px
 	height: auto
-	margin-top: -285px
+	margin-top: -295px
 	float: left
 	margin-left: 5px
 	//  src="img/icons/w1.png"
-.story .pic6
-	margin-top: 290px
+
 .pic7
 	width: 125px
 	height: auto
 	float: left
-	margin: -135px 0 0 293px
+	margin: -148px 0 0 293px
 	// src="img/icons/w2.png"
-.story .pic7
-	margin-top: -142px
+// .story .pic7
+// 	margin-top: -148px
 .pic8
 	width: 270px
 	height: auto
