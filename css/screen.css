@@ -42,7 +42,7 @@ html, body { min-height: 100%; }
 .out { width: 90%; max-width: 1400px; min-width: 1000px; margin: 0 auto; *zoom: 1; }
 .out:after { content: " "; display: table; clear: both; }
 
-.header__left { float: left; line-height: 120px; *zoom: 1; }
+.header__left { float: left; line-height: 120px; margin-left: 15px; *zoom: 1; }
 .header__left:after { content: " "; display: table; clear: both; }
 
 .soc a { position: relative; display: inline-block; width: 33px; height: 33px; margin-right: 15px; border-radius: 50%; border: 1px solid #cecece; }
@@ -353,14 +353,16 @@ html, body { min-height: 100%; }
 .therapy { display: table; table-layout: fixed; position: relative; background-color: white; *zoom: 1; }
 .therapy:first-child { padding-top: 30px; }
 .therapy:last-child { padding-bottom: 30px; }
-.therapy__item { display: table-cell; word-break: break-all; width: 25%; background-color: #cecece; color: #333333; padding: 32px 32px 60px; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; }
-.therapy__item p, .therapy__item ul { margin-top: 8px; font-family: "Open Sans", sans-serif; font-weight: 300; font-style: normal; font-size: 15px; font-size: 1.5rem; }
-.therapy__pic { display: table-cell; width: 25%; background-color: #cecece; color: #333333; padding: 0; vertical-align: top; }
+.therapy__item, .therapy__pic { display: table-cell; width: 25%; background-color: #cecece; color: #333333; padding: 32px 32px 60px; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; -moz-hyphens: auto; -webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto; }
+.therapy__item p, .therapy__item ul, .therapy__pic p, .therapy__pic ul { margin-top: 8px; font-family: "Open Sans", sans-serif; font-weight: 300; font-style: normal; font-size: 15px; font-size: 1.5rem; }
+.therapy__pic { padding: 0; vertical-align: top; }
 .therapy:after { content: " "; display: table; clear: both; }
 
 .therapy__img { display: block; margin: 0; padding: 0; width: 100%; height: auto; }
 
 .therapy__title { display: inline; color: #333333; margin-bottom: 20px; vertical-align: top; font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 20px; font-size: 2rem; }
+@media screen and (max-width: 1200px) { .therapy__title { font-size: 19px; font-size: 1.9rem; } }
+@media screen and (max-width: 1130px) { .therapy__title { width: 1185px; font-size: 18px; font-size: 1.8rem; } }
 .therapy__title:hover { border-bottom: 1px solid #333333; }
 
 .therapy__list { display: inline-block; position: relative; padding-left: 10px; color: #333333; font-family: "Open Sans", sans-serif; font-weight: 300; font-style: normal; font-size: 15px; font-size: 1.5rem; }

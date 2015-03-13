@@ -530,7 +530,6 @@
 	float: right
 	color: #EBEBEB
 	margin-top: 4px
-	// border-radius: 0 10px 0 10px
 .services__img_right
 	float: right
 	position: relative
@@ -609,9 +608,9 @@
 		padding-top: 30px
 	&:last-child
 		padding-bottom: 30px
-	&__item
+	&__item,
+	&__pic
 		display: table-cell
-		word-break: break-all
 		width: 25%
 		background-color: #CECECE
 		color: #333
@@ -619,24 +618,16 @@
 		-webkit-box-sizing: content-box
 		-moz-box-sizing: content-box
 		box-sizing: content-box
-		// white-space: pre; /* CSS 2.0 */
-		// white-space: pre-wrap; /* CSS 2.1 */
-		// white-space: pre-line; /* CSS 3.0 */
-		// white-space: -pre-wrap; /* Opera 4-6 */
-		// white-space: -o-pre-wrap; /* Opera 7 */
-		// white-space: -moz-pre-wrap; /* Mozilla */
-		// white-space: -hp-pre-wrap; /* HP Printers */
-		// word-wrap: break-word; /* IE 5+ */
+		-moz-hyphens: auto
+		-webkit-hyphens: auto
+		-ms-hyphens: auto
+		hyphens: auto
 		p,
 		ul
 			margin-top: 8px
 			+os_light
 			+fs(15)
 	&__pic
-		display: table-cell
-		width: 25%
-		background-color: #CECECE
-		color: #333
 		padding: 0
 		vertical-align: top
 	+clr
@@ -645,7 +636,7 @@
 	margin: 0
 	padding: 0
 	width: 100%
-	height: auto/*  :340 */
+	height: auto
 
 .therapy__title
 	display: inline
@@ -654,6 +645,11 @@
 	vertical-align: top
 	+os_reg
 	+fs(20)
+	+max-screen(1200)
+		+fs(19)
+	+max-screen(1130)
+		width: 1185px
+		+fs(18)
 	&:hover
 		border-bottom: 1px solid #333
 
@@ -689,7 +685,6 @@
 		+s(photo_pic)
 	+max-screen(1350)
 		top: 15px
-
 
 
 /* --------------------doctors.html ---------------- */
