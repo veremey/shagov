@@ -46,13 +46,6 @@ $(document).ready(function(){
 		});
 
 
-// $(".accordion__link").click(function (){
-// 	$(this).next(".slide").toggle();
-// 	$(this).children().toggleClass(".is-active").toggleClass(".is-hide")
-// 	return false;
-// });
-
-
 (function($) {
 
   var allPanels = $('.accordion .slide').hide();
@@ -64,7 +57,6 @@ $(document).ready(function(){
   });
 
 })(jQuery);
-
 
 
  function tab() {
